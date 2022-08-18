@@ -1,7 +1,7 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const EslingPlugin = require('eslint-webpack-plugin');
 
@@ -13,13 +13,13 @@ const baseConfig = {
     mode: 'development',
     module: {
         rules: [
-            { 
+            {
                 test: /\.ts$/i,
-                use: 'ts-loader'
+                use: 'ts-loader',
             },
             {
                 test: /\.css$/i,
-                use:['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
@@ -32,19 +32,15 @@ const baseConfig = {
     },
     plugins: [
         new EslingPlugin({ extensions: 'ts' }),
-        new HtmlWebpackPlugin(
-        {
+        new HtmlWebpackPlugin({
             template: path.resolve(__dirname, './src/index.html'),
             filename: 'index.html',
-            inject:false,
-        }
-        ),
+            inject: false,
+        }),
 
         new CopyPlugin({
-            patterns: [
-              { from: "src/photo", to: "photo" },
-            ],
-          }),
+            patterns: [{ from: 'src/photo', to: 'photo' }],
+        }),
         new CleanWebpackPlugin(),
     ],
 };
@@ -52,7 +48,6 @@ const baseConfig = {
 module.exports = ({ mode }) => {
     const isProductionMode = mode === 'prod';
     const envConfig = isProductionMode ? require('./webpack.prod.config') : require('./webpack.dev.config');
-
 
     return merge(baseConfig, envConfig);
 };
