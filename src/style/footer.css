@@ -1,0 +1,47 @@
+.footer{
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.809);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper{
+    color: white;
+    width: 90%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.author-title--link{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.author-title--link:hover{
+    filter: drop-shadow(0 0 5px black);
+}
+.year{
+    display: flex;
+    align-items:center ;
+}
+.rss{
+    width: 20%;
+    height: 100%;
+}
+.logoRss{
+    transition: 0.3s;
+}
+.logoRss:hover{
+    filter: drop-shadow(0 0 5px rgb(255, 0, 0));
+}
+
+
