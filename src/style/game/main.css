@@ -1,0 +1,18 @@
+.main{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    text-align: center;
+}
+.title-str{
+    margin-bottom: 10%;
+}
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-ListGAme{
+    border: 1px solid white;
+}
