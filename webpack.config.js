@@ -10,6 +10,7 @@ const baseConfig = {
         index: path.resolve(__dirname, './src/index'),
         gameJS: path.resolve(__dirname, './src/gameJS'),
         startJS: path.resolve(__dirname, './src/startJS'),
+        authorization: path.resolve(__dirname, './src/authorization'),
     },
     mode: 'development',
     module: {
@@ -53,8 +54,8 @@ const baseConfig = {
         ),
         new HtmlWebpackPlugin(
             {
-                template: path.resolve(__dirname, './src/start.html'),
-                filename: 'start.html',
+                template: path.resolve(__dirname, './src/authorization.html'),
+                filename: 'authorization.html',
                 inject:false,
             }
         ),
