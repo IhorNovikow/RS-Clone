@@ -4,4 +4,6 @@ import './style/main.css';
 import './style/footer.css';
 import './style/reset.css';
 
-import './js/moveToGame';
+import './script/startGame';
+import './style/gameStr.css';
+import './script/changeBackground';
