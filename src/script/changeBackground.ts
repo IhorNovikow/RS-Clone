@@ -7,18 +7,23 @@ iconBackground.addEventListener('click', () => {
 someBackground.addEventListener('click', (event: MouseEvent) => {
     const a = <HTMLElement>event.target;
     if (a.classList.contains('fon-img')) {
-        const mainWrapper = <HTMLElement>document.querySelector('.main-wrapper');
-        mainWrapper.style.backgroundImage = `url(./photo/${a.classList[1]}/morning/1.jpg)`;
-        const ourTime: Date = new Date();
-        let dayTime: string;
-        if (ourTime.getHours() >= 5 && ourTime.getHours() <= 11) {
-            dayTime = 'morning';
-        } else if (ourTime.getHours() >= 11 && ourTime.getHours() <= 19) {
-            dayTime = 'afternoon';
-        } else {
-            dayTime = 'evening';
-        }
-        mainWrapper.style.backgroundImage = `url(./photo/${a.classList[1]}/${dayTime}/1.jpg)`;
+        const dayTime: string = getTime();
+        changeBackground(a.classList[1], dayTime);
         someBackground.classList.toggle('displayNone');
     }
 });
+
+export function changeBackground(a: string, b: string): void {
+    const mainWrapper = <HTMLElement>document.querySelector('.main-wrapper');
+    mainWrapper.style.backgroundImage = `url(./photo/${a}/${b}/1.jpg)`;
+}
+export function getTime(): string {
+    const ourTime: Date = new Date();
+    if (ourTime.getHours() >= 5 && ourTime.getHours() <= 11) {
+        return 'morning';
+    } else if (ourTime.getHours() >= 11 && ourTime.getHours() <= 19) {
+        return 'afternoon';
+    } else {
+        return 'evening';
+    }
+}

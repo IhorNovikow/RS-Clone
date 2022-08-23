@@ -7,3 +7,4 @@ import './style/reset.css';
 import './script/startGame';
 import './style/gameStr.css';
 import './script/changeBackground';
+import './script/firtVisit';
