@@ -21,11 +21,12 @@ body {
 }
 
 .main {
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     perspective: 1200px;
 }
 
@@ -34,7 +35,7 @@ body {
 .book {
     transform-style: preserve-3d;
     position: relative;
-    height: 525px;
+    height: 57vh;
     backface-visibility: visible;
 }
 
@@ -46,7 +47,7 @@ body {
 .page6 {
     transform-style: preserve-3d;
     position: absolute;
-    width: 350px;
+    width: 23vw;
     height: 90%;
     top: 5%;
     left: 0;
@@ -60,18 +61,17 @@ body {
 .back {
     transform-style: preserve-3d;
     position: absolute;
-    width: 380px;
+    width: 26vw;
     height: 100%;
     top: 0;
     left: 0;
     padding: 40px;
     transform-origin: left center;
     background: #b39066;
-    /*box-shadow: -1em 1em 2.5em 0 rgba(0, 0, 0, 0.2);*/
     border-bottom-right-radius: 0.5em;
     border-top-right-radius: 0.5em;
     transition: transform 0.5s ease-in-out, box-shadow 0.35s ease-in-out;
-} 
+}
 
 .front {
     transform: rotateY(-180deg) scale(1.1);
@@ -159,7 +159,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 20px 20px;
-    gap: 20px;
+    gap: 30px;
     transform: rotateY(180deg);
     color: var(--font-color);
 }
@@ -267,7 +267,7 @@ body {
 .registration-button {
     width: 100%;
     font-size: 1.3rem;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 8px 10px;
     font-family: var(--other-font);
     cursor: pointer;
@@ -280,10 +280,135 @@ body {
 }
 
 .button-login {
-    margin-top: 14.96px;
+    margin-top: 34.96px;
 }
 
 .registration-button:hover {
     filter: drop-shadow(2px 2px 5px var(--font-color));
     color: #fffeb0;
+}
+
+/*Adaptive*/
+
+@media screen and (max-width: 1600px) {
+
+    .book {
+        height: 59vh;
+    }
+
+    .registration-form {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .book {
+        height: 63vh;
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        width: 27vw;
+    }
+    
+    .front,
+    .back {
+        width: 30vw;
+    }
+
+    .button-login {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    .book {
+        height: 65vh;
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        width: 26vw;
+    }
+    
+    .front,
+    .back {
+        width: 29vw;
+    }
+
+    .registration-form {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    /*.book {
+        height: 70vw;
+        transform: rotate(90deg);
+    }
+
+    .page5{
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .page6 {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .registration-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /*height: auto;*/
+        /*padding: 20px 20px;
+        gap: 20px;
+        transform: rotate(-90deg);
+        /*transform: rotateY(-270deg);*/
+        /*color: var(--font-color);
+    }
+
+    .login {
+        transform: rotate(90deg) scale(-1, 1);
+        /*transform: rotateY(-90deg);*/
+    /*}
+
+    /*.login {
+        transform: rotate(90deg) scale(-1, 1);
+    }*/
+
+    /*.login-title-container {
+        gap: 15px;
+        margin-bottom: 10px;
+        /*margin-top: 20px;*/
+    /*}*/
+
+    /*.page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        display: none;
+    }
+
+    .front,
+    .back {
+        display: none;
+    }*/
 }
