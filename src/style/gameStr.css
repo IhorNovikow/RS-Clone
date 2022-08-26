@@ -30,7 +30,7 @@
     width: 90%;
     height: 90%;
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .cross:hover{
@@ -106,6 +106,14 @@
     filter: drop-shadow(0 0 5px green);
     width: 80%;
     height: 80%;
+}
+.text{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2vw;
+    height: 80%;
+    overflow-y: auto;
+    margin-top: 20px;
 }
 
 .displayNone{

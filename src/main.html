@@ -8,6 +8,9 @@
     <title>RSClone</title>
 </head>
 <body class="body">
+    <audio id="myAudio">
+        <source src="./photo/assets/music/main.mp3" type="audio/mpeg">
+    </audio>
 <header class="header">
 <div class="header-wrapper">
     <div class="box icon-game">
@@ -38,12 +41,25 @@
             <img src="./photo/desert/morning/1.jpg" alt="desert" class="fon-img desert">
         </div>
     </div>
-    <div class="box icon-sound"><img src="./photo/icon/sound.png" alt="sound"></div>
+    <div class="box icon-sound"><img src="./photo/icon/sound.png" alt="sound" class="sound-img"></div>
 </div>
 </header>
 <main class="main">
     <div class="main-wrapper">
-        <button class="button-star-game">Play</button>
+        <div class="main-wrapper-btn">
+            <button class="button-star-game">Play</button>
+            <div class="button-back-game">
+                <img src="./photo/icon/forvard.png" alt="back" class="img-back-game">
+            </div>
+            <div class="button-forward-game">
+                <img src="./photo/icon/forvard.png" alt="back"  class="img-forvard-game">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="wrapper-boy">
+        <div class="boy"></div>
     </div>
 </main>
 <footer class="footer">
@@ -65,6 +81,7 @@
     </div>
 
   </footer>
+  <input type="text" class="info12">
 
 <div class="start-wrapper displayNone">
     <div class="startt-content-wrapper">
