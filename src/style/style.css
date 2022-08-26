@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -18,23 +23,30 @@ input:focus {
 
 body {
     background-color: #f5eee5;
+    overflow-x: hidden;
 }
 
 .main {
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     perspective: 1200px;
 }
 
 /*Book*/
 
+.mobile-book {
+    display: none;
+}
+
 .book {
+    display: block;
     transform-style: preserve-3d;
     position: relative;
-    height: 525px;
+    height: 34.5vw;
     backface-visibility: visible;
 }
 
@@ -46,7 +58,7 @@ body {
 .page6 {
     transform-style: preserve-3d;
     position: absolute;
-    width: 350px;
+    width: 23.5vw;
     height: 90%;
     top: 5%;
     left: 0;
@@ -60,18 +72,17 @@ body {
 .back {
     transform-style: preserve-3d;
     position: absolute;
-    width: 380px;
+    width: 26.5vw;
     height: 100%;
     top: 0;
     left: 0;
     padding: 40px;
     transform-origin: left center;
     background: #b39066;
-    /*box-shadow: -1em 1em 2.5em 0 rgba(0, 0, 0, 0.2);*/
     border-bottom-right-radius: 0.5em;
     border-top-right-radius: 0.5em;
     transition: transform 0.5s ease-in-out, box-shadow 0.35s ease-in-out;
-} 
+}
 
 .front {
     transform: rotateY(-180deg) scale(1.1);
@@ -139,7 +150,7 @@ body {
 .book-title-container {
     width: 100%;
     height: 100%;
-    border: 4px solid #d4af47;
+    border: 4px solid #d4ae47;
     box-shadow: inset 0 0 10px var(--font-color);
     display: flex;
     align-items: center;
@@ -159,7 +170,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 20px 20px;
-    gap: 20px;
+    gap: 1.7vw;
     transform: rotateY(180deg);
     color: var(--font-color);
 }
@@ -173,8 +184,8 @@ body {
     align-items: center;
     gap: 15px;
     width: 100%;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-bottom: 1.7vw;
+    margin-top: 1.5vw;
 }
 
 .title-line {
@@ -211,6 +222,7 @@ body {
     background-color: inherit;
     font-family: var(--other-font);
     font-size: 1.2rem;
+    line-height: 1;
     transition: all 0.3s ease-in-out;
 }
 
@@ -221,7 +233,7 @@ body {
 
 .password-view {
     position: absolute;
-    right: 0;
+    right: 5px;
     border: none;
     background-color: transparent;
     height: 1rem;
@@ -231,14 +243,14 @@ body {
 }
 
 .password-view-hide:before {
-	content: "";
-	border-bottom: 3px solid var(--font-color);
-	position: absolute;
+    content: '';
+    border-bottom: 3px solid var(--font-color);
+    position: absolute;
     right: 3px;
     top: -2px;
-	width: 100%;
-	height: 60%;
-	transform: rotate(-45deg);
+    width: 100%;
+    height: 60%;
+    transform: rotate(-45deg);
 }
 
 .password-icon {
@@ -267,7 +279,8 @@ body {
 .registration-button {
     width: 100%;
     font-size: 1.3rem;
-    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 1.7vw;
     padding: 8px 10px;
     font-family: var(--other-font);
     cursor: pointer;
@@ -280,10 +293,384 @@ body {
 }
 
 .button-login {
-    margin-top: 14.96px;
+    margin-top: 1.9vw;
 }
 
 .registration-button:hover {
     filter: drop-shadow(2px 2px 5px var(--font-color));
     color: #fffeb0;
+}
+
+/*Adaptive*/
+
+@media screen and (max-width: 1600px) {
+    .registration-form {
+        gap: 1.5vw;
+    }
+
+    .login-title-container {
+        margin-bottom: 1.1vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .book {
+        height: 37vw;
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        width: 25.5vw;
+    }
+
+    .front,
+    .back {
+        width: 28.5vw;
+    }
+
+    .button-login {
+        margin-top: 2vw;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .book {
+        height: 39vw;
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        width: 27vw;
+    }
+
+    .front,
+    .back {
+        width: 30vw;
+    }
+
+    .registration-title {
+        font-size: 2.5rem;
+    }
+
+    .registration-input {
+        font-size: 1rem;
+    }
+
+    .password-view {
+        height: 0.8rem;
+        width: 21px;
+    }
+
+    .password-view-hide:before {
+        border-bottom: 2px solid var(--font-color);
+        right: 2px;
+        top: 2px;
+        height: 50%;
+    }
+
+    .forget-password {
+        font-size: 0.9rem;
+    }
+
+    .registration-button {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .book {
+        height: 45vw;
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        width: 31.5vw;
+    }
+
+    .front,
+    .back {
+        width: 34.5vw;
+    }
+
+    .book-title-container {
+        font-size: 1.1rem;
+    }
+
+    .registration-input {
+        border-bottom: 1.5px solid var(--font-color);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .registration-title {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .book-title-container {
+        font-size: 0.8rem;
+    }
+
+    .registration-title {
+        font-size: 2rem;
+    }
+
+    .registration-input {
+        font-size: 0.8rem;
+    }
+
+    .password-view {
+        height: 0.6rem;
+        width: 16px;
+        top: 5px;
+    }
+
+    .password-view-hide:before {
+        top: 4px;
+    }
+
+    .forget-password {
+        font-size: 0.7rem;
+    }
+
+    .registration-button {
+        font-size: 1rem;
+    }
+
+    .button-login {
+        margin-top: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .book {
+        height: 48vw;
+    }
+
+    .page1,
+    .page2,
+    .page3,
+    .page4,
+    .page5,
+    .page6 {
+        width: 34vw;
+    }
+
+    .front,
+    .back {
+        width: 37vw;
+    }
+
+    .registration-title {
+        font-size: 1.8rem;
+    }
+
+    .registration-input {
+        font-size: 0.7rem;
+    }
+
+    .password-view {
+        height: 0.5rem;
+        width: 13px;
+    }
+
+    .password-view-hide:before {
+        top: 5px;
+        right: 1.7px;
+        border-bottom: 1.5px solid var(--font-color);
+    }
+
+    .forget-password {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .front,
+    .back {
+        padding: 25px;
+    }
+
+    .registration-title {
+        font-size: 1.5rem;
+    }
+
+    .registration-button {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .book {
+        display: none;
+    }
+
+    .mobile-book {
+        display: block;
+    }
+
+    .mobile-page {
+        position: relative;
+        width: 80vw;
+        height: 100vw;
+        padding: 1em;
+        background: #fafafa;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+
+    .mobile-page:before,
+    .mobile-page:after {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        height: 20%;
+        max-width: 300px;
+        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+        transform: rotate(-3deg);
+    }
+
+    .mobile-page:after {
+        right: 10px;
+        left: auto;
+        transform: rotate(3deg);
+    }
+
+    .registration-form {
+        gap: 3vw;
+        transform: none;
+    }
+
+    .reg-none {
+        display: none;
+    }
+
+    .login-title-container {
+        margin-bottom: 3vw;
+    }
+
+    .registration-title {
+        font-size: 2.5rem;
+    }
+
+    .registration-input {
+        border-bottom: 2px solid var(--font-color);
+        font-size: 1.1rem;
+    }
+
+    .password-view {
+        height: 1rem;
+        width: 25px;
+        top: 0.6rem;
+    }
+
+    .password-view-hide:before {
+        border-bottom: 3px solid var(--font-color);
+        right: 2px;
+        top: -1px;
+    }
+
+    .forget-password {
+        font-size: 0.9rem;
+    }
+
+    .registration-button {
+        font-size: 1.2rem;
+        margin-top: 3vw;
+    }
+
+    .switch-authorization {
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        border-bottom: 2px solid var(--font-color);
+        color: var(--font-color);
+        font-family: var(--other-font);
+        font-weight: bold;
+        padding: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .switch-authorization:hover {
+        filter: drop-shadow(1px 1px 2px #3fab9bb0);
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .login-title-container {
+        margin-top: 0;
+        margin-bottom: 2vw;
+    }
+
+    .registration-title {
+        font-size: 2rem;
+    }
+
+    .registration-input {
+        font-size: 1rem;
+    }
+
+    .password-view {
+        height: 0.9rem;
+        width: 23px;
+        top: 0.7rem;
+    }
+
+    .password-view-hide:before {
+        border-bottom: 2px solid var(--font-color);
+        top: 0px;
+    }
+
+    .registration-button {
+        font-size: 1.1rem;
+        margin-top: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+
+    .login-title-container {
+        margin: 0;
+    }
+
+    .registration-input {
+        font-size: 0.9rem;
+    }
+
+    .registration-button {
+        font-size: 1rem;
+        margin-top: 2vw;
+        padding: 5px;
+    }
+
+    .password-view {
+        height: 0.8rem;
+        width: 20.5px;
+        top: 0.6rem;
+    }
+
+    .password-view-hide:before {
+        right: 2px;
+        top: 1px;
+    }
+
 }

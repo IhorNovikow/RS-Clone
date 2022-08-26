@@ -39,7 +39,7 @@ function bookAnimation(): void {
                 page6.classList.add('page6-close');
                 pageBack.classList.add('back-close');
             }
-            location.href = '../authorization.html';
+            //location.href = '../authorization.html';
         });
     });
 }
