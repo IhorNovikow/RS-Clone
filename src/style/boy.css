@@ -1,0 +1,36 @@
+.wrapper-boy {
+    height: 20vh;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    animation: step 10s linear /*infinite*/;
+}
+
+
+.boy {
+    height: 200px;
+    width: 160px;
+    background: url('../photo/assets/img/sprite-timmy.png') 0px 0px no-repeat;
+    background-size: 960px;
+    animation: play 0.4s steps(6) infinite;
+    position: absolute; 
+    left: 0;
+}
+
+@keyframes play {
+    100% {
+        background-position: -960px;
+    }
+}
+
+@keyframes step {
+    from {
+        left: 20px;
+    }
+    to {
+        left: 90%;
+    }
+}
