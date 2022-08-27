@@ -75,7 +75,7 @@ export const info52 = `<div>Тренировка<br>
 6х = 19 - 1 </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="3">
-    <button class="btn-answer">
+    <button id = "52" class="btn-answer">
     ответить
     </button>
 </div>
@@ -85,7 +85,7 @@ export const info53 = `<div>Тренировка<br>
 x+5=18</div>
 <div class = "wrapper-answer">
     <input type="text" class="info12" placeholder="13">
-    <button class="btn-answer">
+    <button id = "53" class="btn-answer">
     ответить
     </button>
 </div>
@@ -95,7 +95,7 @@ export const info54 = `<div>Тренировка<br>
 -8x = 48 </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12" placeholder="-6">
-    <button class="btn-answer">
+    <button id = "54" class="btn-answer">
     ответить
     </button>
 </div>
@@ -105,7 +105,7 @@ export const info55 = `<div>Тренировка<br>
 6x-5 = 1 </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12" placeholder="1">
-    <button class="btn-answer">
+    <button id = "55" class="btn-answer">
     ответить
     </button>
 </div>
@@ -115,7 +115,7 @@ export const info56 = `<div>Контроль<br>
 6(4-x)+x=3-2x </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12" placeholder="7">
-    <button class="btn-answer">
+    <button id = "56" class="btn-answer">
     ответить
     </button>
 </div>
