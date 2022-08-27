@@ -17,9 +17,61 @@ export const info11 = `Сложение<br>
 export const info12 = `<div>Тренировка<br>
 На одной полке стоит  10  книг, а на другой — на  3  книги меньше. Сколько книг стоит на двух полках?</div>
 <div class = "wrapper-answer">
-    <input type="text" class="info12">
+    <input type="text" class="info12"  placeholder="17">
     <button class="btn-answer">
     ответить
     </button>
 </div>
 `;
+
+export const info13 = `<div>Тренировка<br>
+Для занятий в детский сад купили 40 листов зеленой бумаги, а 
+красной и синей по 15 листов. Сколько листов бумаги осталось через 2 недели, 
+если в первую неделю израсходовали 24 листа, а во вторую на 18 листов больше?</div>
+<div class = "wrapper-answer">
+    <input type="text" class="info12" placeholder="4">
+    <button class="btn-answer">
+    ответить
+    </button>
+</div>
+`;
+
+export const info14 = `<div>Тренировка<br>
+В трех ящиках 42 кг овощей. В первых двух вместе 27 кг. 
+Сколько кг овощей в первом ящике, если во втором на 4 кг меньше чем в третьем?</div>
+<div class = "wrapper-answer">
+    <input type="text" class="info12" placeholder="16">
+    <button class="btn-answer">
+    ответить
+    </button>
+</div>
+`;
+
+export const info15 = `<div>Тренировка<br>
+У школы росло несколько деревьев, когда посадили еще 2 дерева, стало 7. Сколько деревьев росло у школы?</div>
+<div class = "wrapper-answer">
+    <input type="text" class="info12" placeholder="5">
+    <button class="btn-answer">
+    ответить
+    </button>
+</div>
+`;
+
+export const info16 = `<div>Контроль<br>
+У школы посадили 10 елей, а берез на 2 меньше, чем елей. Сколько посадили берез?</div>
+<div class = "wrapper-answer">
+    <input type="text" class="info12" placeholder="8">
+    <button class="btn-answer">
+    ответить
+    </button>
+</div>
+`;
+
+export const info1 = {
+    info11,
+    info12,
+    info13,
+    info14,
+    info15,
+    info16,
+};
