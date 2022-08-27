@@ -161,7 +161,7 @@ export const info22 = `<div>Тренировка<br>
 42 : 6 = </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="7">
-    <button class="btn-answer">
+    <button id = "22" class="btn-answer">
     ответить
     </button>
 </div>
@@ -170,8 +170,8 @@ export const info22 = `<div>Тренировка<br>
 export const info23 = `<div>Тренировка<br>
 31 * 45 =  </div>
 <div class = "wrapper-answer">
-    <input type="text" class="info12"  placeholder="1 395">
-    <button class="btn-answer">
+    <input type="text" class="info12"  placeholder="1395">
+    <button id = "23" class="btn-answer">
     ответить
     </button>
 </div>
@@ -181,7 +181,7 @@ export const info24 = `<div>Тренировка<br>
 3 185 : 35 =   </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="91">
-    <button class="btn-answer">
+    <button id = "24" class="btn-answer">
     ответить
     </button>
 </div>
@@ -191,7 +191,7 @@ export const info25 = `<div>Тренировка<br>
 629 : 17 = </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="37">
-    <button class="btn-answer">
+    <button id = "25" class="btn-answer">
     ответить
     </button>
 </div>
@@ -203,7 +203,7 @@ export const info26 = `<div>Контроль<br>
 ткани осталось в мастерской? </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="43">
-    <button class="btn-answer">
+    <button id = "26" class="btn-answer">
     ответить
     </button>
 </div>`;

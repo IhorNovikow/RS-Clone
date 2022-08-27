@@ -32,51 +32,51 @@ export const info31 = `Сложение и вычитание дробей<br>
 <img src="../photo/assets/img/примеры/сложение дробей1.1.jpg" alt="пример" style = 'width: 80%; margin: 0 auto'>
 `;
 
-export const info22 = `<div>Тренировка<br>
+export const info32 = `<div>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-level1.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12" placeholder="1/2">
-    <button class="btn-answer">
+    <button id = "32" class="btn-answer">
     ответить
     </button>
 </div>
 `;
 
-export const info23 = `<d>Тренировка<br>
+export const info33 = `<d>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-level2.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="0">
-    <button class="btn-answer">
+    <button id = "33" class="btn-answer">
     ответить
     </button>
 </div>
 `;
 
-export const info24 = `<div>Тренировка<br>
+export const info34 = `<div>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-level3.png" alt="пример" style = 'width: 80%; margin: 0 auto'></div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="1/5">
-    <button class="btn-answer">
+    <button id = "34" class="btn-answer">
     ответить
     </button>
 </div>
 `;
 
-export const info25 = `<div>Тренировка<br>
+export const info35 = `<div>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-level4.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="19/72">
-    <button class="btn-answer">
+    <button id = "35" class="btn-answer">
     ответить
     </button>
 </div>
 `;
 
-export const info26 = `<div>Контроль<br>
+export const info36 = `<div>Контроль<br>
 <img src="../photo/assets/img/примеры/fractions-level5.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="9/10">
-    <button class="btn-answer">
+    <button id = "36" class="btn-answer">
     ответить
     </button>
 </div>

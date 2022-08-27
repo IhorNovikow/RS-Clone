@@ -60,7 +60,7 @@ export const info42 = `<d>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-lvl1.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="14/5">
-    <button class="btn-answer">
+    <button id = "42" class="btn-answer">
     ответить
     </button>
 </div>
@@ -69,7 +69,7 @@ export const info43 = `<d>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-lvl2.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="2/3">
-    <button class="btn-answer">
+    <button id = "43" class="btn-answer">
     ответить
     </button>
 </div>
@@ -78,7 +78,7 @@ export const info44 = `<d>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-lvl3.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="40">
-    <button class="btn-answer">
+    <button id = "44" class="btn-answer">
     ответить
     </button>
 </div>
@@ -87,7 +87,7 @@ export const info45 = `<d>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-lvl4.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="2/3">
-    <button class="btn-answer">
+    <button id = "45" class="btn-answer">
     ответить
     </button>
 </div>
@@ -96,7 +96,7 @@ export const info46 = `<d>Тренировка<br>
 <img src="../photo/assets/img/примеры/fractions-lvl5.png" alt="пример" style = 'width: 80%; margin: 0 auto'> </div>
 <div class = "wrapper-answer">
     <input type="text" class="info12"  placeholder="120">
-    <button class="btn-answer">
+    <button id = "46" class="btn-answer">42
     ответить
     </button>
 </div>
