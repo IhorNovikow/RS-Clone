@@ -1,4 +1,5 @@
 import { info11, info12 } from './info1';
+import { info31 } from './info3';
 const gameStr = <HTMLElement>document.querySelector('.start-wrapper');
 const buttonStarGame = <HTMLButtonElement>document.querySelector('.button-star-game');
 
@@ -6,7 +7,7 @@ buttonStarGame.addEventListener('click', () => {
     gameStr.classList.remove('displayNone');
     const cross = <HTMLElement>gameStr.querySelector('.cross-wrapper');
     const test = <HTMLElement>gameStr.querySelector('.text');
-    test.innerHTML = info11;
+    test.innerHTML = info31;
     cross.addEventListener('click', () => {
         gameStr.classList.add('displayNone');
     });
