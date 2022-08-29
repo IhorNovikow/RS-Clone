@@ -1,0 +1,44 @@
+.wrapper-boy {
+    height: 200px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    border: 1px solid red;
+}
+.addAnimationBlock{
+    animation: step 10s linear;
+}
+
+.boy {
+    height: 200px;
+    width: 160px;
+    background: url('../photo/assets/img/singl-timmy.png') 0px 0px no-repeat;
+    background-size: contain;
+    border: 1px solid black;
+    position: absolute; 
+    left: 0;
+}
+
+.addAnimationBoy {
+    background: url('../photo/assets/img/sprite-timmy.png') 0px 0px no-repeat;
+    background-size: 960px 200px;
+    animation: play 0.4s steps(6) infinite;
+}
+
+@keyframes play {
+    100% {
+        background-position: -960px;
+    }
+}
+
+@keyframes step {
+    from {
+        left: 20px;
+    }
+    to {
+        left: 90%;
+    }
+}

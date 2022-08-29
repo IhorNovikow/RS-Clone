@@ -8,17 +8,69 @@
     align-items: center;
     justify-content: center;
 }
-.button-star-game{
+.main-wrapper-btn{
     width: 20vh;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-star-game{
+    width: 18vh;
     height: 10vh;
     color: black;
     font-size: 5vh;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.2s;
 }
 .button-star-game:hover{
-    filter: drop-shadow(0 0 5px rgb(89, 255, 0));
+    width: 20vh;
+    height: 11vh;
+    filter: drop-shadow(0 0 5px red);
 }
 .button-star-game:active{
-    filter: drop-shadow(0 0 5px red);
+    width: 19vh;
+    height: 10vh;
+    filter: drop-shadow(0 0 5px green);
+}
+.button-back-game{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 10vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+.img-back-game{
+    cursor: pointer;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.button-forward-game{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 10vh;
+    height: 8vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.button-forward-game:hover, .button-back-game:hover{
+    width: 11vh;
+    height: 9vh;
+    filter: drop-shadow(0 0 10px red);
+}
+.button-forward-game:active, .button-back-game:active{
+    width: 9vh;
+    height: 7vh;
+    filter: drop-shadow(0 0 10px green);
 }

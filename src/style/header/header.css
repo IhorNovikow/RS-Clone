@@ -1,5 +1,5 @@
 .header-wrapper{
-    background-color: black;
+    background-color: gray;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -23,3 +23,36 @@
   height: 100px;
 }
 
+.someBackground{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  top: 10vh;
+  right: 22%;
+}
+.fon{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.fon-img{
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fon-img:hover{
+  width: 90%;
+  height: 90%;
+  filter: drop-shadow(0 0 5px rgb(89, 255, 0));
+}
+.fon-img:active{
+  width: 70%;
+  height: 70%;
+  filter: drop-shadow(0 0 5px rgb(0, 234, 255));
+}
