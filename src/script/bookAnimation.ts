@@ -1,4 +1,4 @@
-function bookAnimation(): void {
+export function bookAnimation(): void {
     const registrationButton: NodeListOf<Element> = document.querySelectorAll('.registration-button');
     registrationButton.forEach((el: Element) => {
         const pageFront = <HTMLElement>document.querySelector('.front');
@@ -43,5 +43,3 @@ function bookAnimation(): void {
         });
     });
 }
-
-bookAnimation();

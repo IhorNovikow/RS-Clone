@@ -172,4 +172,6 @@ userLog.addEventListener('click', async (event) => {
     if (target.classList.contains('but-log')) {
         loginUser(data);
     }
+
 });
+

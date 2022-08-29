@@ -301,6 +301,77 @@ body {
     color: #fffeb0;
 }
 
+
+.password-container.active{
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid red;
+	padding: 5px 10px;
+	background-color: inherit;
+	font-family: var(--other-font);
+	font-size: 1.2rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.regmessage{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	color: red;
+	text-align: center;
+}
+
+
+
+.loginmessage{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	color: red;
+	text-align: center;
+}
+
+.username {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid var(--font-color);
+	padding: 5px 10px;
+	background-color: inherit;
+	font-family: var(--other-font);
+	font-size: 1.2rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.userpass {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid var(--font-color);
+	padding: 5px 10px;
+	background-color: inherit;
+	font-family: var(--other-font);
+	font-size: 1.2rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.but-log{
+	width: 100%;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    padding: 8px 10px;
+    font-family: var(--other-font);
+    cursor: pointer;
+    background-color: #48c2b0;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px var(--font-color);
+    border: none;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+}
+
+.but-log:hover {
+	filter: drop-shadow(2px 2px 5px var(--font-color));
+	color: #fffeb0;
+=======
 /*Adaptive*/
 
 @media screen and (max-width: 1600px) {
@@ -672,5 +743,6 @@ body {
         right: 2px;
         top: 1px;
     }
+
 
 }
