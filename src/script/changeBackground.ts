@@ -8,14 +8,16 @@ someBackground.addEventListener('click', (event: MouseEvent) => {
     const a = <HTMLElement>event.target;
     if (a.classList.contains('fon-img')) {
         const dayTime: string = getTime();
-        changeBackground(a.classList[1], dayTime);
+        changeBackground(a.classList[1], dayTime, 1);
+        localStorage.setItem('nameBackground', a.classList[1]);
+        console.log(typeof a.classList[1]);
         someBackground.classList.toggle('displayNone');
     }
 });
 
-export function changeBackground(a: string, b: string): void {
+export function changeBackground(a: string, b: string, c: number): void {
     const mainWrapper = <HTMLElement>document.querySelector('.main-wrapper');
-    mainWrapper.style.backgroundImage = `url(./photo/${a}/${b}/1.jpg)`;
+    mainWrapper.style.backgroundImage = `url(./photo/${a}/${b}/${c}.jpg)`;
 }
 export function getTime(): string {
     const ourTime: Date = new Date();
