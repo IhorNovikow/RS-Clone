@@ -371,7 +371,7 @@ body {
 .but-log:hover {
 	filter: drop-shadow(2px 2px 5px var(--font-color));
 	color: #fffeb0;
-=======
+}
 /*Adaptive*/
 
 @media screen and (max-width: 1600px) {
