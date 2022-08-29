@@ -1,18 +1,26 @@
 import { info } from './all-info';
 import { useVerification } from './useVerification';
+//import { transitionNextLvl } from './transitionNextLvl';
+import { getTime } from './changeBackground';
+import { runBoy, stopBoyAfterAnimation } from './runBoy';
 
 const gameStr = <HTMLElement>document.querySelector('.start-wrapper');
 const buttonStarGame = <HTMLButtonElement>document.querySelector('.button-star-game');
 
 export let inf = 11;
-localStorage.setItem('result', '12');
+const localInf = localStorage.getItem('result');
+if (localInf) {
+    inf = Number(localInf);
+} else {
+    localStorage.setItem('result', '12');
+}
+
 buttonStarGame.addEventListener('click', () => {
     gameStr.classList.remove('displayNone');
     const cross = <HTMLElement>document.getElementById('cross-wrapper');
     cross.addEventListener('click', () => {
         gameStr.classList.add('displayNone');
     });
-
     const test = <HTMLElement>gameStr.querySelector('.text');
     test.innerHTML = info[String(inf)];
     useVerification();
@@ -27,8 +35,14 @@ function forwardStrGame() {
             const localResult = +(<string>localStorage.getItem('result'));
             if (newStr <= localResult) {
                 inf = newStr;
+                test.innerHTML = info[String(inf)];
+                useVerification();
+                const nameBackground = <string>localStorage.getItem('nameBackground');
+                const dayTime: string = getTime();
+                runBoy();
+                stopBoyAfterAnimation(nameBackground, dayTime, inf);
             } else {
-                alert('увф но вы еще не прошли этот этап');
+                alert('увы но вы еще не прошли этот этап');
             }
         } else if (inf === 56) {
             alert('вы выйграли и прошли игру) теперь вы знаете математику');
@@ -37,12 +51,12 @@ function forwardStrGame() {
             const localResult = +(<string>localStorage.getItem('result'));
             if (newStr <= localResult) {
                 inf = newStr;
+                test.innerHTML = info[String(inf)];
+                useVerification();
             } else {
                 alert('увы но вы еще не прошли этот этап');
             }
         }
-        test.innerHTML = info[String(inf)];
-        useVerification();
     });
 }
 forwardStrGame();

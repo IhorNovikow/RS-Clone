@@ -12,3 +12,4 @@ import './script/changeBackground';
 import './script/firtVisit';
 import './script/backgroundMusic';
 import './script/musicMainGame';
+import './script/runBoy';
