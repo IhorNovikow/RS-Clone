@@ -1,4 +1,4 @@
-import { bookAnimation } from '../script/bookAnimation';
+import { bookAnimation } from '../bookAnimation';
 
 const base = 'http://localhost:3000';
 const reg = `${base}/auth/registration`;
