@@ -10,6 +10,6 @@ import './style/gameStr.css';
 import './script/startGame';
 import './script/changeBackground';
 import './script/firtVisit';
-import './script/backgroundMusic';
-import './script/musicMainGame';
+import './script/music/backgroundMusic';
+import './script/music/musicMainGame';
 import './script/runBoy';
