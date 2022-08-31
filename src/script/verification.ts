@@ -1,4 +1,4 @@
-import { answers } from './answers';
+import { answers } from './info/answers';
 export function verification(): boolean {
     const gameStr = <HTMLElement>document.querySelector('.start-wrapper');
     const btnAnswer = <HTMLElement>gameStr.querySelector('.btn-answer');
