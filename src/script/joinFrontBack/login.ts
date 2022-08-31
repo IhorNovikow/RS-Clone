@@ -1,4 +1,4 @@
-import { bookAnimation } from '../script/bookAnimation';
+import { bookAnimation } from '../bookAnimation';
 const base = 'http://localhost:3000';
 const login = `${base}/auth/login`;
 

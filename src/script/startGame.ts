@@ -1,4 +1,4 @@
-import { info } from './all-info';
+import { info } from './info/all-info';
 import { useVerification } from './useVerification';
 //import { transitionNextLvl } from './transitionNextLvl';
 import { getTime } from './changeBackground';

@@ -10,7 +10,6 @@ someBackground.addEventListener('click', (event: MouseEvent) => {
         const dayTime: string = getTime();
         changeBackground(a.classList[1], dayTime, 1);
         localStorage.setItem('nameBackground', a.classList[1]);
-        console.log(typeof a.classList[1]);
         someBackground.classList.toggle('displayNone');
     }
 });
