@@ -6,7 +6,6 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
-    border: 1px solid red;
 }
 .addAnimationBlock{
     animation: step 10s linear;
@@ -17,7 +16,6 @@
     width: 160px;
     background: url('../photo/assets/img/singl-timmy.png') 0px 0px no-repeat;
     background-size: contain;
-    border: 1px solid black;
     position: absolute; 
     left: 0;
 }

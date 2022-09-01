@@ -2,6 +2,8 @@ import { info } from './info/all-info';
 import { useVerification } from './useVerification';
 import { getTime } from './changeBackground';
 import { runBoy, stopBoyAfterAnimation } from './runBoy';
+//import { transitionToTopik } from './transitionToTopik';
+import { toggleDisplayNone } from './openCloseBook';
 
 const gameStr = <HTMLElement>document.querySelector('.start-wrapper');
 const buttonStarGame = <HTMLButtonElement>document.querySelector('.button-star-game');
@@ -13,17 +15,18 @@ if (localInf) {
 } else {
     localStorage.setItem('result', '12');
 }
-
-buttonStarGame.addEventListener('click', () => {
+export function openGame(numberGame: string) {
     gameStr.classList.remove('displayNone');
     const cross = <HTMLElement>document.getElementById('cross-wrapper');
     cross.addEventListener('click', () => {
         gameStr.classList.add('displayNone');
     });
     const test = <HTMLElement>gameStr.querySelector('.text');
-    test.innerHTML = info[String(inf)];
+    test.innerHTML = numberGame;
     useVerification();
-});
+}
+const numberGame: string = info[String(inf)];
+buttonStarGame.addEventListener('click', openGame.bind(null, numberGame));
 
 function forwardStrGame() {
     const btnForward = <HTMLElement>gameStr.querySelector('.btn-forward');
@@ -76,3 +79,57 @@ function backStrGame() {
     });
 }
 backStrGame();
+
+function transitionToTopik() {
+    const subtitleUlInfo = <HTMLUListElement>document.querySelector('.subtitle-ul-info');
+    subtitleUlInfo.addEventListener('click', (event) => {
+        const target = <HTMLElement>event.target;
+        if (target === subtitleUlInfo.childNodes[1]) {
+            if (target.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(11)];
+                inf = 11;
+                openGame(numberGame);
+            } else {
+                alert(' увы вам этот уровень еще недоступен');
+            }
+        } else if (target === subtitleUlInfo.childNodes[3]) {
+            if (target.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(21)];
+                inf = 21;
+                openGame(numberGame);
+            } else {
+                alert(' увы вам этот уровень еще недоступен');
+            }
+        } else if (target === subtitleUlInfo.childNodes[5]) {
+            if (target.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(31)];
+                inf = 31;
+                openGame(numberGame);
+            } else {
+                alert(' увы вам этот уровень еще недоступен');
+            }
+        } else if (target === subtitleUlInfo.childNodes[7]) {
+            if (target.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(41)];
+                inf = 41;
+                openGame(numberGame);
+            } else {
+                alert(' увы вам этот уровень еще недоступен');
+            }
+        } else if (target === subtitleUlInfo.childNodes[9]) {
+            if (target.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(51)];
+                inf = 51;
+                openGame(numberGame);
+            } else {
+                alert(' увы вам этот уровень еще недоступен');
+            }
+        }
+    });
+}
+transitionToTopik();
