@@ -1,8 +1,6 @@
 passwordView();
 export function passwordView(): void {
-    console.log(1);
     const passwordView: NodeListOf<Element> = document.querySelectorAll('.password-view');
-    console.log(passwordView);
     passwordView.forEach((el: Element) => {
         el.addEventListener('click', () => {
             const inputPassword = <HTMLInputElement>el.previousElementSibling;
