@@ -5,4 +5,4 @@ import './script/passwordView';
 import './script/registrationFront';
 import './script/inputInAplication';
 import './script/validationPasswordNumber';
-import './script/passwordView';
+import './script/loginMethod';

@@ -1,6 +1,5 @@
 import { info } from './info/all-info';
 import { useVerification } from './useVerification';
-//import { transitionNextLvl } from './transitionNextLvl';
 import { getTime } from './changeBackground';
 import { runBoy, stopBoyAfterAnimation } from './runBoy';
 

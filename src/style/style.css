@@ -330,8 +330,8 @@ body {
 	color: red;
 	text-align: center;
 }
-
-.username {
+/*
+.entered-name {
 	width: 100%;
 	border: none;
 	border-bottom: 2px solid var(--font-color);
@@ -342,7 +342,7 @@ body {
 	transition: all 0.3s ease-in-out;
 }
 
-.userpass {
+.entered-password {
 	width: 100%;
 	border: none;
 	border-bottom: 2px solid var(--font-color);
@@ -351,7 +351,7 @@ body {
 	font-family: var(--other-font);
 	font-size: 1.2rem;
 	transition: all 0.3s ease-in-out;
-}
+}*/
 
 .but-log{
 	width: 100%;

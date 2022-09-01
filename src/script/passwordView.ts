@@ -1,5 +1,8 @@
-function passwordView(): void {
+passwordView();
+export function passwordView(): void {
+    console.log(1);
     const passwordView: NodeListOf<Element> = document.querySelectorAll('.password-view');
+    console.log(passwordView);
     passwordView.forEach((el: Element) => {
         el.addEventListener('click', () => {
             const inputPassword = <HTMLInputElement>el.previousElementSibling;
@@ -14,24 +17,3 @@ function passwordView(): void {
         });
     });
 }
-
-passwordView();
-
-/*function passwordView() {
-    const passwordView = document.querySelectorAll('.password-view');
-    passwordView.forEach((el) => {
-        el.addEventListener('click', () => {
-            const inputPassword = el.previousElementSibling;
-            if (el.classList.contains('password-view-hide')) {
-                el.classList.remove('password-view-hide');
-                inputPassword.type = 'password';
-            } else {
-                el.classList.add('password-view-hide');
-                const inputPassword = el.previousElementSibling;
-                inputPassword.type = 'text';
-            }
-        });
-    });
-}
-
-passwordView();*/
