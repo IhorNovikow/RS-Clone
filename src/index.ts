@@ -13,3 +13,5 @@ import './script/firtVisit';
 import './script/music/backgroundMusic';
 import './script/music/musicMainGame';
 import './script/runBoy';
+import './script/openCloseBook';
+import './script/addCheckToTopik';
