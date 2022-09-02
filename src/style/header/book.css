@@ -1,40 +1,59 @@
+.info-book {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .icon-book {
-  transform-style: preserve-3d;
-  position: relative;
-  height: 10vh;
-  cursor: pointer;
-  backface-visibility: visible;
+    height: 100%;
 }
-.info-open-book{
-  width: 300px;
-  height: 300px;
-  background-color: gray;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.icon-book-img {
+    width: auto;
+    height: 90%;
 }
+
+.info-open-book {
+    position: absolute;
+    top: calc(10vh - 10px);
+    right: -10px;
+    width: 30vw;
+    background-color: #2e2e2ecc;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 5px #000000;
+}
+
 .subtitle-li-info {
-  list-style: none;
-  padding-left: 24px;
-  margin-left: -25px;
-  cursor: pointer;
-  font-size: 2vw;
+    list-style: none;
+    padding-left: 24px;
+    margin-left: -25px;
+    cursor: pointer;
+    font-size: 2vw;
 }
-.subtitle-li-info:hover{
-  font-size: 2.02vw;
-  filter: drop-shadow(0 0 5px red);
+
+.subtitle-li-info:hover {
+    font-size: 2.02vw;
+    filter: drop-shadow(0 0 5px red);
 }
-.subtitle-li-info:active{
-  font-size: 2.02vw;
-  filter: drop-shadow(0 0 5px green);
+
+.subtitle-li-info:active {
+    font-size: 2.02vw;
+    filter: drop-shadow(0 0 5px green);
 }
-.subtitle-li-info-background1{
-background: url(../../photo/icon/cross-mark.png) no-repeat 0;
-background-size: 12px;
+
+.subtitle-li-info-background1 {
+    background: url(../../photo/icon/cross-mark.png) no-repeat 0;
+    background-size: 12px;
 }
-.subtitle-li-info-background2{
-background: url(../../photo/icon/check-mark.png) no-repeat 0;
-background-size: 12px;
+
+.subtitle-li-info-background2 {
+    background: url(../../photo/icon/check-mark.png) no-repeat 0;
+    background-size: 12px;
 }
