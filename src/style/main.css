@@ -1,3 +1,7 @@
+body {
+    font-family: 'Segoe UI';
+}
+
 .main-wrapper{
     background-image:url('../photo/forest/afternoon/1.jpg');
     background-repeat: no-repeat;
