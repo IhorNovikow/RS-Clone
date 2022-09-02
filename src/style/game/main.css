@@ -6,13 +6,39 @@
     padding: 5%;
     text-align: center;
 }
-.title-str{
-    margin-bottom: 10%;
-}
-.content-wrapper{
+.wrapper-game{
+    width: 90%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
 }
-.wrapper-ListGAme{
-    border: 1px solid white;
+.game1{
+    width: 45%;
+    height: 40%;
+    background-image: url(../../photo/icon/100K1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.2s;
 }
+.game1:hover{
+    width: 46%;
+    height: 41%;
+    filter: drop-shadow(0 0 5px red);
+}
+.game1:active{
+    width: 44%;
+    height: 39%;
+    filter: drop-shadow(0 0 5px green);
+}
+
+
+.game2{
+    width: 45%;
+    height: 40%;
+    background-image: url(../../photo/icon/viktorina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
