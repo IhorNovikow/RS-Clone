@@ -1,4 +1,3 @@
-/*import { nameBackground, dayTime } from './firtVisit';*/
 import { changeBackground } from './changeBackground';
 export function transitionNextLvl(
     nameFolderBackground: string,
