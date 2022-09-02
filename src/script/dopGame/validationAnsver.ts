@@ -1,4 +1,4 @@
-import { allAnswers } from './answers/allanswers';
+import { allAnswers } from './answers/allAnswers';
 import { openAnswer } from './openAnswer';
 export function validationAnsver(rank: string, numberQvestion: number) {
     const inputAnswer = <HTMLInputElement>document.querySelector('.input-answer');
