@@ -1,6 +1,5 @@
 function loginMethod(): void {
     const switchAuthorization = document.querySelectorAll('.switch-authorization');
-    console.log(switchAuthorization);
     switchAuthorization.forEach((el: Element) => {
         el.addEventListener('click', () => {
             const login = <HTMLElement>document.getElementById('login');
