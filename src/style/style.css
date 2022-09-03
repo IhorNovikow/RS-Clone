@@ -27,7 +27,6 @@ body {
 }
 
 .main {
-    /*max-width: 1920px;*/
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -169,7 +168,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px 20px;
+    padding: 20px;
     gap: 1.7vw;
     transform: rotateY(180deg);
     color: var(--font-color);
@@ -258,24 +257,6 @@ body {
     width: 100%;
 }
 
-.forget-password {
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-    font-size: 1.1rem;
-    cursor: pointer;
-    text-decoration: underline solid var(--font-color);
-    color: var(--font-color);
-    font-family: var(--other-font);
-    line-height: 1.15;
-    padding: 5px 0;
-    transition: 0.3s ease-in-out;
-}
-
-.forget-password:hover {
-    text-shadow: 1px 1px 2px #3fab9bb0;
-}
-
 .registration-button {
     width: 100%;
     font-size: 1.3rem;
@@ -293,7 +274,7 @@ body {
 }
 
 .button-login {
-    margin-top: 1.9vw;
+    margin-top: 5.4vw;
 }
 
 .registration-button:hover {
@@ -303,75 +284,39 @@ body {
 
 
 .password-container.active{
-	width: 100%;
-	border: none;
 	border-bottom: 2px solid red;
-	padding: 5px 10px;
-	background-color: inherit;
-	font-family: var(--other-font);
-	font-size: 1.2rem;
-	transition: all 0.3s ease-in-out;
 }
 
 .regmessage{
-	width: 100%;
-	height: 50px;
-	font-size: 20px;
-	color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+	width: calc(100% - 40px);
+    font-family: var(--other-font);
+	font-size: 1.2rem;
+	color: #ff0000;
+    text-shadow: 1px 1px 2px #000000b0;
+    border-radius: 10px;
 	text-align: center;
+    padding: 5px;
+    z-index: 10;
 }
-
-
 
 .loginmessage{
-	width: 100%;
-	height: 50px;
-	font-size: 20px;
-	color: red;
-	text-align: center;
-}
-/*
-.entered-name {
-	width: 100%;
-	border: none;
-	border-bottom: 2px solid var(--font-color);
-	padding: 5px 10px;
-	background-color: inherit;
-	font-family: var(--other-font);
-	font-size: 1.2rem;
-	transition: all 0.3s ease-in-out;
-}
-
-.entered-password {
-	width: 100%;
-	border: none;
-	border-bottom: 2px solid var(--font-color);
-	padding: 5px 10px;
-	background-color: inherit;
-	font-family: var(--other-font);
-	font-size: 1.2rem;
-	transition: all 0.3s ease-in-out;
-}*/
-
-.but-log{
-	width: 100%;
-    font-size: 1.3rem;
-    margin-top: 10px;
-    padding: 8px 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+	width: calc(100% - 40px);
     font-family: var(--other-font);
-    cursor: pointer;
-    background-color: #48c2b0;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px var(--font-color);
-    border: none;
-    border-radius: 9px;
-    transition: all 0.3s ease-in-out;
+	font-size: 1.2rem;
+	color: #ff0000;
+    text-shadow: 1px 1px 2px #000000b0;
+    border-radius: 10px;
+	text-align: center;
+    padding: 5px;
+    z-index: 10;
 }
 
-.but-log:hover {
-	filter: drop-shadow(2px 2px 5px var(--font-color));
-	color: #fffeb0;
-}
 /*Adaptive*/
 
 @media screen and (max-width: 1600px) {
@@ -381,6 +326,18 @@ body {
 
     .login-title-container {
         margin-bottom: 1.1vw;
+    }
+
+    .button-login {
+        margin-top: 5.7vw;
+    }
+
+    .regmessage{
+        font-size: 1.1rem;
+    }
+    
+    .loginmessage{
+        font-size: 1.1rem;
     }
 }
 
@@ -404,7 +361,15 @@ body {
     }
 
     .button-login {
-        margin-top: 2vw;
+        margin-top: 5.9vw;
+    }
+
+    .regmessage{
+        font-size: 1rem;
+    }
+    
+    .loginmessage{
+        font-size: 1rem;
     }
 }
 
@@ -447,12 +412,16 @@ body {
         height: 50%;
     }
 
-    .forget-password {
-        font-size: 0.9rem;
-    }
-
     .registration-button {
         font-size: 1.1rem;
+    }
+
+    .regmessage{
+        font-size: 0.95rem;
+    }
+    
+    .loginmessage{
+        font-size: 0.95rem;
     }
 }
 
@@ -482,11 +451,19 @@ body {
     .registration-input {
         border-bottom: 1.5px solid var(--font-color);
     }
+
+    .button-login {
+        margin-top: 6.2vw;
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .registration-title {
         font-size: 2.3rem;
+    }
+
+    .button-login {
+        margin-top: 6.5vw;
     }
 }
 
@@ -513,16 +490,20 @@ body {
         top: 4px;
     }
 
-    .forget-password {
-        font-size: 0.7rem;
-    }
-
     .registration-button {
         font-size: 1rem;
     }
 
     .button-login {
-        margin-top: 2.5vw;
+        margin-top: 6.3vw;
+    }
+
+    .regmessage{
+        font-size: 0.7rem;
+    }
+    
+    .loginmessage{
+        font-size: 0.7rem;
     }
 }
 
@@ -564,8 +545,18 @@ body {
         border-bottom: 1.5px solid var(--font-color);
     }
 
-    .forget-password {
+    .button-login {
+        margin-top: 6.7vw;
+    }
+
+    .regmessage{
         font-size: 0.6rem;
+        bottom: 5px;
+    }
+    
+    .loginmessage{
+        font-size: 0.6rem;
+        bottom: 5px;
     }
 }
 
@@ -575,12 +566,28 @@ body {
         padding: 25px;
     }
 
+    .login-title-container {
+        margin: 0;
+    }
+
     .registration-title {
         font-size: 1.5rem;
     }
 
     .registration-button {
         font-size: 0.8rem;
+    }
+
+    .button-login {
+        margin-top: 7.5vw;
+    }
+
+    .regmessage{
+        bottom: 0;
+    }
+    
+    .loginmessage{
+        bottom: 0;
     }
 }
 
@@ -657,10 +664,6 @@ body {
         top: -1px;
     }
 
-    .forget-password {
-        font-size: 0.9rem;
-    }
-
     .registration-button {
         font-size: 1.2rem;
         margin-top: 3vw;
@@ -681,6 +684,16 @@ body {
     
     .switch-authorization:hover {
         filter: drop-shadow(1px 1px 2px #3fab9bb0);
+    }
+
+    .regmessage{
+        bottom: 20px;
+        font-size: 1.2rem;
+    }
+    
+    .loginmessage{
+        bottom: 20px;
+        font-size: 1.2rem;
     }
 }
 
@@ -715,6 +728,14 @@ body {
         margin-top: 2vw;
     }
 
+    .regmessage{
+        font-size: 1rem;
+    }
+    
+    .loginmessage{
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 340px) {
@@ -744,5 +765,11 @@ body {
         top: 1px;
     }
 
-
+    .regmessage{
+        font-size: 0.8rem;
+    }
+    
+    .loginmessage{
+        font-size: 0.8rem;
+    }
 }
