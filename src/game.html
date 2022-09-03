@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./photo/fav/drag.png">
     <title>Game</title>
 </head>
 <body>
@@ -11,30 +12,52 @@
         
     </header>
     <main class="main">
-        <h1 class="title-str">тренеру свои навыки </h1>
-        <div class="content-wrapper">
-            <div class="wrapper-ListGAme">
-                <ol>
-                    <h3>Игры</h3>
-                    <li>викторина</li>
-                    <li>100 к 1</li>
-                    <li>кто хочет <br>стать миллионером</li>
-                </ol>
+        <div class="title">
+            trenerui svi navuki
+        </div>
+        <div class="wrapper-game">
+            <div class="game1">
             </div>
-            <div class="wrapper-WinerBord">
-                <ol>
-                    <h3>Победители</h3>
-                    <li>витя</li>
-                    <li>маша</li>
-                    <li>даша</li>
-                    <li>петя</li>
-                    <li>толя</li>
-                    <li>коля</li>
-                    <li>дима</li>
-                    <li>наташа</li>
-                    <li>саша</li>
-                    <li>ксюша</li>
-                </ol>
+            <div class="game2">
+            </div>
+        </div>
+        <div class="windowGame displayNone">
+            <p class="title-in-game">Выберите стоимость вопроса</p>
+            <p class="close-Game">
+                <img src="./photo/icon/cross-mark.png" alt="cross" class="cross-img">
+            </p>
+            <div class="wrapper-price">
+                <div class="box-price box-price1">10</div>
+                <div class="box-price box-price2">20</div>
+                <div class="box-price box-price3">30</div>
+                <div class="box-price box-price4">40</div>
+                <div class="box-price box-price5">50</div>
+                <div class="box-price box-price6">60</div>
+                <div class="box-price box-price7">70</div>
+                <div class="box-price box-price8">80</div>
+                <div class="box-price box-price9">90</div>
+                <div class="box-price box-price10">100</div>
+            </div>
+        </div>
+        <div class="window-qestion displayNone">
+            <p class="title-qestion">Вопрос</p>
+            <div class="wrapper-qestion">
+                <div class="box-question"></div>
+                <div class="wrapper-answer">
+                    <input type="text" class="input-answer">
+                    <button class="btn-answer">Ответить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="window-answer displayNone">
+            <div class="wrapper-window-answer">
+                <p class="title-answer">
+                    <p class="close-answer">
+                        <img src="./photo/icon/cross-mark.png" alt="cross" class="answer-cross-img">
+                    </p>
+                    <p class="answer-content"></p>
+                </p>
             </div>
         </div>
 
