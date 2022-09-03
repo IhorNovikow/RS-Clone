@@ -1,14 +1,32 @@
-.header-wrapper {
+.header {
     background-color: #2e2e2e;
     height: 10vh;
     width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    color: #000000;
+    filter: drop-shadow(0 0 2px #04d435);
+}
+
+.game-logo {
+    font-family: 'Vladimir Script';
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #000000;
+    filter: invert(100%);
+}
+
+.icon-wrapper {
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 20px;
     gap: 5vw;
-    position: relative;
-    z-index: 10;
 }
 
 .box {
@@ -18,11 +36,11 @@
     align-items: center;
     filter: drop-shadow(0 0 2px #04d435);
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s ease-in-out;
 }
 
 .box:hover {
-    filter: drop-shadow(0 0 2px #e7ff00);
+    filter: drop-shadow(0 0 2px #ff0099);
 }
 
 .icon-game-link {
@@ -33,6 +51,7 @@
 .icon-game-img {
     height: 100%;
     width: auto;
+    filter: invert(100%);
 }
 
 .background-box {
@@ -50,6 +69,7 @@
 .icon-background-img {
     width: auto;
     height: 100%;
+    filter: invert(100%);
 }
 
 .someBackground {
@@ -62,6 +82,7 @@
     right: -10px;
     box-shadow: 0 0px 5px #000000;
 }
+
 .fon {
     width: 150px;
     height: 150px;
@@ -70,17 +91,20 @@
     align-items: center;
     background-color: #2e2e2ecc;
 }
+
 .fon-img {
     width: 80%;
     height: 80%;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
+
 .fon-img:hover {
     width: 90%;
     height: 90%;
     filter: drop-shadow(0 0 5px #04d435);
 }
+
 .fon-img:active {
     width: 70%;
     height: 70%;
@@ -90,4 +114,5 @@
 .sound-img {
     height: 100%;
     width: auto;
+    filter: invert(100%);
 }
