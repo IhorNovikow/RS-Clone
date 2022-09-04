@@ -6,6 +6,7 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
+    z-index: 20;
 }
 .addAnimationBlock{
     animation: step 10s linear;

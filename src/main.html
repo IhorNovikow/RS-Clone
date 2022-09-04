@@ -12,7 +12,10 @@
             <source src="./photo/assets/music/main.mp3" type="audio/mpeg" />
         </audio>
         <header class="header">
-            <div class="header-wrapper">
+            <div class="logo-wrapper">
+                <h1 class="game-logo">Maths-Clone</h1>
+            </div>
+            <div class="icon-wrapper">
                 <div class="info-book">
                     <div class="box icon-book">
                         <img src="./photo/icon/book.png" alt="openBook" class="icon-book-img" />
@@ -20,11 +23,11 @@
                     <div class="info-open-book displayNone">
                         <h2 class="title-info-open-book">Уроки</h3>
                         <ul class="subtitle-ul-info">
-                            <li class="subtitle-li-info subtitle-li-info-background1">Сложение, Вычитание</li>
-                            <li class="subtitle-li-info subtitle-li-info-background1">Законы умножения и деления</li>
-                            <li class="subtitle-li-info subtitle-li-info-background1">Сложение и вычитание дробей</li>
-                            <li class="subtitle-li-info subtitle-li-info-background1">Умножение и деление дробей</li>
-                            <li class="subtitle-li-info subtitle-li-info-background1">Простейшие уравнения</li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Сложение и вычитание целых чисел</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Умножение и деление целых чисел</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Сложение и вычитание дробей</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Умножение и деление дробей</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Простейшие уравнения</span></li>
                         </ul>
                     </div>
                 </div>
@@ -50,7 +53,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="box icon-sound">
                     <img src="./photo/icon/sound.png" alt="sound" class="sound-img" />
                 </div>
@@ -95,16 +97,26 @@
             <div class="startt-content-wrapper">
                 <div id="cross-wrapper" class="cross-wrapper">
                     <div class="cross">
-                        <img src="./photo/icon/cross.png" alt="cross" />
+                        <img src="./photo/icon/cross.png" alt="cross" class="cross-img" />
                     </div>
                 </div>
-                <div class="text"></div>
+                <div class="text-wrapper">
+                    <div class="text"></div>
+                </div>
                 <button class="btn-pagination btn-back">
                     <img src="./photo/icon/forvard.png" alt="back" class="img-back" />
                 </button>
                 <button class="btn-pagination btn-forward">
                     <img src="./photo/icon/forvard.png" alt="forward" class="img-forvard" />
                 </button>
+            </div>
+        </div>
+
+        <div class="alert">
+            <div class="alert-message">
+                <p class="alert-message-text">Ты в самом начале пути. Поэтому только вперед, мой юный друг!</p>
+                <button class="alert-button">Окей</button>
+                <button class="alert-button alert-button-end" style="display: none;">Начать заново</button>
             </div>
         </div>
 
