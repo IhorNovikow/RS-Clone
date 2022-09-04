@@ -4,6 +4,8 @@ import { getTime } from './changeBackground';
 import { runBoy, stopBoyAfterAnimation } from './runBoy';
 //import { transitionToTopik } from './transitionToTopik';
 import { toggleDisplayNone } from './openCloseBook';
+import { closeAlert } from './closeAlert';
+import { resetProgress } from './resetProgress';
 
 const gameStr = <HTMLElement>document.querySelector('.start-wrapper');
 const buttonStarGame = <HTMLButtonElement>document.querySelector('.button-star-game');
@@ -31,6 +33,9 @@ buttonStarGame.addEventListener('click', openGame.bind(null, numberGame));
 function forwardStrGame() {
     const btnForward = <HTMLElement>gameStr.querySelector('.btn-forward');
     const test = <HTMLElement>gameStr.querySelector('.text');
+    const alertMessage = <HTMLElement>document.querySelector('.alert');
+    const alertMessageText = <HTMLElement>document.querySelector('.alert-message-text');
+    const resetButton = <HTMLElement>document.querySelector('.alert-button-end');
     btnForward.addEventListener('click', () => {
         if (inf === 16 || inf === 26 || inf === 36 || inf === 46) {
             const newStr = inf + 5;
@@ -44,10 +49,19 @@ function forwardStrGame() {
                 runBoy();
                 stopBoyAfterAnimation(nameBackground, dayTime, inf);
             } else {
-                alert('увы но вы еще не прошли этот этап');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Сперва необходимо завершить этот этап.';
+                closeAlert();
             }
         } else if (inf === 56) {
-            alert('вы выйграли и прошли игру) теперь вы знаете математику');
+            alertMessage.classList.add('alert-active');
+            resetButton.style.display = 'block';
+            alertMessageText.innerHTML = `
+            Ура! Ты подтянул математику и помог Тимми найти свой дом.<br>
+            Знай, ты всегда сможешь вернуться в те красивые места, в которых ты побывал. А Тимми обязательно составит тебе компанию.
+            `;
+            closeAlert();
+            resetProgress();
         } else {
             const newStr = inf + 1;
             const localResult = +(<string>localStorage.getItem('result'));
@@ -56,7 +70,9 @@ function forwardStrGame() {
                 test.innerHTML = info[String(inf)];
                 useVerification();
             } else {
-                alert('увы но вы еще не прошли этот этап');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Сперва необходимо завершить этот этап.';
+                closeAlert();
             }
         }
     });
@@ -64,13 +80,17 @@ function forwardStrGame() {
 forwardStrGame();
 
 function backStrGame() {
-    const btnForward = <HTMLElement>gameStr.querySelector('.btn-back');
+    const btnBack = <HTMLElement>gameStr.querySelector('.btn-back');
     const test = <HTMLElement>gameStr.querySelector('.text');
-    btnForward.addEventListener('click', () => {
+    const alertMessage = <HTMLElement>document.querySelector('.alert');
+    const alertMessageText = <HTMLElement>document.querySelector('.alert-message-text');
+    btnBack.addEventListener('click', () => {
         if (inf === 21 || inf === 31 || inf === 41 || inf === 51) {
             inf = inf - 5;
         } else if (inf === 11) {
-            alert(' вы и так в самом начале пути, так что только вперед, не останавливайся)');
+            alertMessage.classList.add('alert-active');
+            alertMessageText.innerHTML = 'Ты в самом начале пути. Поэтому только вперед, мой юный друг!';
+            closeAlert();
         } else {
             inf = inf - 1;
         }
@@ -82,6 +102,8 @@ backStrGame();
 
 function transitionToTopik() {
     const subtitleUlInfo = <HTMLUListElement>document.querySelector('.subtitle-ul-info');
+    const alertMessage = <HTMLElement>document.querySelector('.alert');
+    const alertMessageText = <HTMLElement>document.querySelector('.alert-message-text');
     subtitleUlInfo.addEventListener('click', (event) => {
         const target = <HTMLElement>event.target;
         if (target === subtitleUlInfo.childNodes[1]) {
@@ -91,7 +113,9 @@ function transitionToTopik() {
                 inf = 11;
                 openGame(numberGame);
             } else {
-                alert(' увы вам этот уровень еще недоступен');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
             }
         } else if (target === subtitleUlInfo.childNodes[3]) {
             if (target.classList.contains('subtitle-li-info-background2')) {
@@ -100,7 +124,9 @@ function transitionToTopik() {
                 inf = 21;
                 openGame(numberGame);
             } else {
-                alert(' увы вам этот уровень еще недоступен');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
             }
         } else if (target === subtitleUlInfo.childNodes[5]) {
             if (target.classList.contains('subtitle-li-info-background2')) {
@@ -109,7 +135,9 @@ function transitionToTopik() {
                 inf = 31;
                 openGame(numberGame);
             } else {
-                alert(' увы вам этот уровень еще недоступен');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
             }
         } else if (target === subtitleUlInfo.childNodes[7]) {
             if (target.classList.contains('subtitle-li-info-background2')) {
@@ -118,7 +146,9 @@ function transitionToTopik() {
                 inf = 41;
                 openGame(numberGame);
             } else {
-                alert(' увы вам этот уровень еще недоступен');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
             }
         } else if (target === subtitleUlInfo.childNodes[9]) {
             if (target.classList.contains('subtitle-li-info-background2')) {
@@ -127,7 +157,9 @@ function transitionToTopik() {
                 inf = 51;
                 openGame(numberGame);
             } else {
-                alert(' увы вам этот уровень еще недоступен');
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
             }
         }
     });
