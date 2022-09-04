@@ -7,3 +7,5 @@ import './style/game/windowAnswer.css';
 
 import './script/dopGame/startDopGame';
 import './script/dopGame/openQestion';
+import './script/dopGame/openCloseWiners';
+import './script/dopGame/getScoreUser';
