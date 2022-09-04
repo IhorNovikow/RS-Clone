@@ -6,6 +6,7 @@ import './style/reset.css';
 import './style/boy.css';
 import './style/info.css';
 import './style/gameStr.css';
+import './style/alert.css';
 
 import './script/startGame';
 import './script/changeBackground';

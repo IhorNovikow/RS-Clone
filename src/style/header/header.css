@@ -81,6 +81,7 @@
     top: calc(10vh - 10px);
     right: -10px;
     box-shadow: 0 0px 5px #000000;
+    z-index: 15;
 }
 
 .fon {
