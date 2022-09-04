@@ -7,6 +7,7 @@ import './style/boy.css';
 import './style/info.css';
 import './style/gameStr.css';
 import './style/alert.css';
+import './style/mainAdaptive.css';
 
 import './script/startGame';
 import './script/changeBackground';

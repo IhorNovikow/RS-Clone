@@ -1,0 +1,302 @@
+@media screen and (max-width: 1536px) {
+    .title-info-open-book {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .title-info-open-book {
+        font-size: 1.6rem;
+    }
+
+    .subtitle-ul-info {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .someBackground {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .title-info-open-book {
+        font-size: 1.3rem;
+    }
+
+    .subtitle-ul-info {
+        font-size: 1rem;
+    }
+
+    .text {
+        font-size: 1.1rem;
+    }
+
+    .theme-title {
+        font-size: 2rem;
+    }
+
+    .alert-message {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .logo-wrapper {
+        height: 80%;
+    }
+
+    .box {
+        height: 90%;
+    }
+
+    .theme-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .info-open-book {
+        width: 40vw;
+    }
+
+    .alert-message {
+        font-size: 1rem;
+    }
+
+    .startt-content-wrapper {
+        width: 60%;
+        height: 60%;
+    }
+
+    .theme-title {
+        font-size: 1.4rem;
+    }
+
+    .example-info11 {
+        width: 60%;
+    }
+    
+    .example-info21 {
+        width: 60%;
+    }
+
+    .example-info31 {
+        width: 65%;
+    }
+    
+    .example-info41 {
+        width: 75%;
+    }
+
+    .alert-message {
+        box-shadow: inset 0 0 10px #04d435;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .startt-content-wrapper {
+        width: 60%;
+        height: 40%;
+    }
+
+    .theme-title {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .example-info11 {
+        width: 75%;
+    }
+    
+    .example-info21 {
+        width: 75%;
+    }
+
+    .btn-pagination {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .btn-back {
+        bottom: 0;
+        left: 0;
+    }
+    
+    .btn-forward {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info-open-book {
+        width: 55vw;
+    }
+
+    .info-answer {
+        width: 70%;
+    }
+
+    .btn-answer {
+        width: 70%;
+    }
+
+    .logo-wrapper {
+        height: 50%;
+    }
+
+    .box {
+        height: 65%;
+    }
+
+    .cross-wrapper {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .startt-content-wrapper {
+        height: 60%;
+        top: -15%;
+    }
+
+    .alert-message {
+        max-width: 70vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .startt-content-wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .theme-title {
+        font-size: 1.1rem;
+    }
+
+    .info-open-book {
+        width: 70vw;
+        right: -80px;
+    }
+
+    .logo-wrapper {
+        height: 40%;
+    }
+
+    .box {
+        height: 55%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .author-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .header {
+        height: 15vh;
+    }
+
+    .main-wrapper{
+        height: 85vh;
+    }
+
+    .info-open-book {
+        top: calc(15vh - 10px);
+    }
+
+    .someBackground {
+        top: calc(15vh - 10px);
+    }
+
+    .startt-content-wrapper {
+        height: 50%;
+        top: -17%;
+    }
+
+    .title-info-open-book {
+        font-size: 1.1rem;
+    }
+
+    .subtitle-ul-info {
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        font-size: 0.6rem;
+    }
+
+    .author-title {
+        font-size: 0.8rem;
+    }
+
+    .main-wrapper-btn{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .header {
+        height: 18vh;
+    }
+
+    .main-wrapper{
+        height: 82vh;
+    }
+
+    .info-open-book {
+        top: calc(18vh - 10px);
+    }
+
+    .someBackground {
+        top: calc(18vh - 10px);
+    }
+
+    .footer {
+        height: 25vh;
+    }
+
+    .startt-content-wrapper {
+        height: 80%;
+        top: 0;
+        right: -10%;
+    }
+
+    .alert-message {
+        max-width: 70vw;
+        font-size: 0.8rem;
+    }
+}

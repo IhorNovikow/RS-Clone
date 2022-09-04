@@ -9,16 +9,16 @@
 }
 
 .logo-wrapper {
-    color: #000000;
-    filter: drop-shadow(0 0 2px #04d435);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .game-logo {
-    font-family: 'Vladimir Script';
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: #000000;
-    filter: invert(100%);
+    height: 80%;
+    width: auto;
 }
 
 .icon-wrapper {
