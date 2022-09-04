@@ -1,10 +1,11 @@
 import { addCheckToTopik } from './addCheckToTopik';
 function openCloseBook() {
     const iconBook = <HTMLElement>document.querySelector('.icon-book');
-
     iconBook.addEventListener('click', () => {
         toggleDisplayNone();
         addCheckToTopik();
+        const someBackground = <HTMLElement>document.querySelector('.someBackground');
+        someBackground.classList.add('displayNone');
     });
 }
 openCloseBook();
