@@ -1,22 +1,20 @@
-import { allAnswers } from './answers/allanswers';
+import { allAnswers } from './answers/allAnswers';
 import { openAnswer } from './openAnswer';
+import { getScoreAndName } from './getScoreUser';
+import { upScore } from './putNewScore';
 export function validationAnsver(rank: string, numberQvestion: number) {
     const inputAnswer = <HTMLInputElement>document.querySelector('.input-answer');
     const btnAnswer = <HTMLElement>document.querySelector('.btn-answer');
+
+    const userNameHTML = <HTMLElement>document.querySelector('.user-name');
+    const userScoreHTML = <HTMLElement>document.querySelector('.user-score');
+    const userName = <string>localStorage.getItem('username');
     btnAnswer.addEventListener('click', () => {
         if (allAnswers[rank][numberQvestion] === inputAnswer.value) {
-            console.log('allAnswers[rank][numberQvestion]', allAnswers[rank][numberQvestion]);
-            console.log('typeof allAnswers[rank][numberQvestion]', typeof allAnswers[rank][numberQvestion]);
-            console.log('inputAnswer.value', inputAnswer.value);
-            console.log('typeof inputAnswer.value', typeof inputAnswer.value);
-            //inputAnswer.value = '';
             openAnswer('вы ответили правильно!!!');
+            upScore(userName, Number(rank));
+            getScoreAndName(userName, userNameHTML, userScoreHTML);
         } else {
-            console.log('allAnswers[rank][numberQvestion]', allAnswers[rank][numberQvestion]);
-            console.log('typeof allAnswers[rank][numberQvestion]', typeof allAnswers[rank][numberQvestion]);
-            console.log('inputAnswer.value', inputAnswer.value);
-            console.log('typeof inputAnswer.value', typeof inputAnswer.value);
-            //inputAnswer.value = '';
             openAnswer('ну ты и лох, иди учись, твой ответ полное фуфло');
         }
     });
