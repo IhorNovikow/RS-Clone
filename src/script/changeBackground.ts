@@ -3,6 +3,8 @@ const someBackground = <HTMLElement>document.querySelector('.someBackground');
 
 iconBackground.addEventListener('click', () => {
     someBackground.classList.toggle('displayNone');
+    const infoOpenBook = <HTMLElement>document.querySelector('.info-open-book');
+    infoOpenBook.classList.add('displayNone');
 });
 someBackground.addEventListener('click', (event: MouseEvent) => {
     const a = <HTMLElement>event.target;

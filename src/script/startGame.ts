@@ -2,7 +2,6 @@ import { info } from './info/all-info';
 import { useVerification } from './useVerification';
 import { getTime } from './changeBackground';
 import { runBoy, stopBoyAfterAnimation } from './runBoy';
-//import { transitionToTopik } from './transitionToTopik';
 import { toggleDisplayNone } from './openCloseBook';
 import { closeAlert } from './closeAlert';
 import { resetProgress } from './resetProgress';
@@ -17,7 +16,12 @@ if (localInf) {
 } else {
     localStorage.setItem('result', '12');
 }
-export function openGame(numberGame: string) {
+export function openGame(numberGame?: string) {
+    if (!numberGame) {
+        const localInf = localStorage.getItem('result');
+        numberGame = info[String(Number(localInf))];
+    }
+
     gameStr.classList.remove('displayNone');
     const cross = <HTMLElement>document.getElementById('cross-wrapper');
     cross.addEventListener('click', () => {
@@ -26,9 +30,13 @@ export function openGame(numberGame: string) {
     const test = <HTMLElement>gameStr.querySelector('.text');
     test.innerHTML = numberGame;
     useVerification();
+    const someBackground = <HTMLElement>document.querySelector('.someBackground');
+    const infoOpenBook = <HTMLElement>document.querySelector('.info-open-book');
+    infoOpenBook.classList.add('displayNone');
+    someBackground.classList.add('displayNone');
 }
-const numberGame: string = info[String(inf)];
-buttonStarGame.addEventListener('click', openGame.bind(null, numberGame));
+/*const numberGame: string = info[String(inf)];*/
+buttonStarGame.addEventListener('click', openGame.bind(null, undefined));
 
 function forwardStrGame() {
     const btnForward = <HTMLElement>gameStr.querySelector('.btn-forward');
@@ -106,8 +114,12 @@ function transitionToTopik() {
     const alertMessageText = <HTMLElement>document.querySelector('.alert-message-text');
     subtitleUlInfo.addEventListener('click', (event) => {
         const target = <HTMLElement>event.target;
-        if (target === subtitleUlInfo.childNodes[1]) {
-            if (target.classList.contains('subtitle-li-info-background2')) {
+        const targetParent = <HTMLElement>target.parentNode;
+        console.log('target', target);
+        console.log('our target', subtitleUlInfo.childNodes[1].childNodes[0]);
+        console.log(target === subtitleUlInfo.childNodes[1].childNodes[0]);
+        if (target === subtitleUlInfo.childNodes[1].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(11)];
                 inf = 11;
@@ -117,8 +129,8 @@ function transitionToTopik() {
                 alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
                 closeAlert();
             }
-        } else if (target === subtitleUlInfo.childNodes[3]) {
-            if (target.classList.contains('subtitle-li-info-background2')) {
+        } else if (target === subtitleUlInfo.childNodes[3].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(21)];
                 inf = 21;
@@ -128,8 +140,8 @@ function transitionToTopik() {
                 alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
                 closeAlert();
             }
-        } else if (target === subtitleUlInfo.childNodes[5]) {
-            if (target.classList.contains('subtitle-li-info-background2')) {
+        } else if (target === subtitleUlInfo.childNodes[5].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(31)];
                 inf = 31;
@@ -139,8 +151,8 @@ function transitionToTopik() {
                 alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
                 closeAlert();
             }
-        } else if (target === subtitleUlInfo.childNodes[7]) {
-            if (target.classList.contains('subtitle-li-info-background2')) {
+        } else if (target === subtitleUlInfo.childNodes[7].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(41)];
                 inf = 41;
@@ -150,8 +162,8 @@ function transitionToTopik() {
                 alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
                 closeAlert();
             }
-        } else if (target === subtitleUlInfo.childNodes[9]) {
-            if (target.classList.contains('subtitle-li-info-background2')) {
+        } else if (target === subtitleUlInfo.childNodes[9].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(51)];
                 inf = 51;
