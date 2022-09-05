@@ -111,6 +111,13 @@
     .alert-message {
         box-shadow: inset 0 0 10px #04d435;
     }
+
+    .title-in-game {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 7px #000000;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -191,6 +198,14 @@
     .rss {
         width: 20%;
     }
+
+    .mini-game-title {
+        font-size: 2.4rem;
+    }
+
+    .wrapper-qestion {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -239,7 +254,22 @@
     .rss {
         width: 45%;
     }
-    
+
+    .score {
+        font-size: 1rem;
+    }
+
+    .winners-wrapper {
+        font-size: 1rem;
+    }
+
+    .box-question {
+        font-size: 1rem;
+    }
+
+    .btn-answer2 {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-height: 700px) {
