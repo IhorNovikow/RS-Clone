@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI';
+}
+
+.main-wrapper{
+    background-image:url('../photo/forest/afternoon/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-wrapper-btn{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-star-game{
+    width: 85%;
+    height: 85%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #04d435);
+    transition: 0.3s ease-in-out;
+}
+
+.icon-start-game {
+    width: 100%;
+    height: auto;
+    filter: invert(100%);
+}
+
+.button-star-game:hover{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 2px #ff0099);
+}
+
+.button-star-game:active{
+    width: 85%;
+    height: 85%;
+    filter: drop-shadow(0 0 2px #ff0099);
+}
+
+.button-back-game{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 10vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.img-back-game{
+    cursor: pointer;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.button-forward-game{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 10vh;
+    height: 8vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.button-forward-game:hover, .button-back-game:hover{
+    width: 11vh;
+    height: 9vh;
+    filter: drop-shadow(0 0 10px red);
+}
+
+.button-forward-game:active, .button-back-game:active{
+    width: 9vh;
+    height: 7vh;
+    filter: drop-shadow(0 0 10px green);
+}

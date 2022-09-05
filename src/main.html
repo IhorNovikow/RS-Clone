@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./photo/fav/drag.png" />
+        <title>RSClone</title>
+    </head>
+    <body class="body">
+        <audio id="myAudio">
+            <source src="./photo/assets/music/main.mp3" type="audio/mpeg" />
+        </audio>
+        <header class="header">
+            <div class="logo-wrapper">
+                <img src="./photo/icon/logo.png" alt="logo" class="game-logo">
+            </div>
+            <div class="icon-wrapper">
+                <div class="info-book">
+                    <div class="box icon-book">
+                        <img src="./photo/icon/book.png" alt="openBook" class="icon-book-img" />
+                    </div>
+                    <div class="info-open-book displayNone">
+                        <h2 class="title-info-open-book">Уроки</h3>
+                        <ul class="subtitle-ul-info">
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Сложение и вычитание целых чисел</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Умножение и деление целых чисел</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Сложение и вычитание дробей</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Умножение и деление дробей</span></li>
+                            <li class="subtitle-li-info-background1"><span class="subtitle-li-info">Простейшие уравнения</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box icon-game">
+                    <a href="./game.html" class="icon-game-link"><img src="./photo/icon/джойстик.png" alt="джойстик" class="icon-game-img" /></a>
+                </div>
+                <div class="background-box">
+                    <div class="box icon-background">
+                        <img src="./photo/icon/themes.png" alt="sound" class="icon-background-img" />
+                    </div>
+                    <div class="someBackground displayNone">
+                        <div class="fon">
+                            <img src="./photo/forest/morning/1.jpg" alt="forest" class="fon-img forest" />
+                        </div>
+                        <div class="fon">
+                            <img src="./photo/mountain/morning/1.jpg" alt="mountain" class="fon-img mountain" />
+                        </div>
+                        <div class="fon">
+                            <img src="./photo/snow/morning/1.jpg" alt="snow" class="fon-img snow" />
+                        </div>
+                        <div class="fon">
+                            <img src="./photo/desert/morning/1.jpg" alt="desert" class="fon-img desert" />
+                        </div>
+                    </div>
+                </div>
+                <div class="box icon-sound">
+                    <img src="./photo/icon/sound.png" alt="sound" class="sound-img" />
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-wrapper">
+                <div class="main-wrapper-btn">
+                    <button class="button-star-game">
+                        <img src="./photo/icon/play-button.png" alt="play" class="icon-start-game" />
+                    </button>
+                </div>
+            </div>
+            <div id="wrapper-boy" class="wrapper-boy">
+                <div id="boy" class="boy"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="author">
+                    <h3 class="author-title">Developers:</h3>
+                    <a href="https://github.com/IhorNovikow" class="author-title--link">Ihor Novikau</a>
+                    <a href="https://github.com/vikuli" class="author-title--link">Viktoryia Novikava</a>
+                    <a href="https://github.com/Jafr0" class="author-title--link">Eugene Mikheyenko</a>
+                </div>
+                <div class="year">
+                    <span class="year--sapan">2022</span>
+                </div>
+                <div class="rss">
+                    <a href="https://rs.school/js/" class="rss-link">
+                        <img
+                            src="https://rs.school/images/rs_school_js.svg"
+                            alt="Rolling Scopes School"
+                            class="logoRss"
+                        />
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="start-wrapper displayNone">
+            <div class="startt-content-wrapper">
+                <div id="cross-wrapper" class="cross-wrapper">
+                    <div class="cross">
+                        <img src="./photo/icon/cross.png" alt="cross" class="cross-img" />
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="text"></div>
+                </div>
+                <button class="btn-pagination btn-back">
+                    <img src="./photo/icon/forvard.png" alt="back" class="img-back" />
+                </button>
+                <button class="btn-pagination btn-forward">
+                    <img src="./photo/icon/forvard.png" alt="forward" class="img-forvard" />
+                </button>
+            </div>
+        </div>
+
+        <div class="alert">
+            <div class="alert-message">
+                <p class="alert-message-text">Ты в самом начале пути. Поэтому только вперед, мой юный друг!</p>
+                <button class="alert-button">Окей</button>
+                <button class="alert-button alert-button-end" style="display: none;">Начать заново</button>
+            </div>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>

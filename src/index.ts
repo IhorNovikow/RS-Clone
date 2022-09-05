@@ -1,0 +1,19 @@
+import './style/header/header.css';
+import './style/header/book.css';
+import './style/main.css';
+import './style/footer.css';
+import './style/reset.css';
+import './style/boy.css';
+import './style/info.css';
+import './style/gameStr.css';
+import './style/alert.css';
+import './style/mainAdaptive.css';
+
+import './script/music/backgroundMusic';
+import './script/music/musicMainGame';
+import './script/startGame';
+import './script/changeBackground';
+import './script/firtVisit';
+import './script/runBoy';
+import './script/openCloseBook';
+import './script/addCheckToTopik';

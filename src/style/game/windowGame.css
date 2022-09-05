@@ -1,0 +1,104 @@
+.windowGame {
+    width: 100%;
+    height: 100%;
+    background-color: #3d3d3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-in-game {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 7px #000000;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.close-Game {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross-img {
+    height: 90%;
+    width: auto;
+    filter: drop-shadow(0px 0px 3px #c4c4c4);
+    transition: 0.2s ease-in-out;
+}
+
+.cross-img:hover {
+    height: 100%;
+    filter: drop-shadow(0px 0px 3px #04d435);
+}
+
+.cross-img:active {
+    height: 90%;
+    filter: drop-shadow(0px 0px 3px #04d435);
+}
+
+.wrapper-price {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+}
+
+.wrapper-price::-webkit-scrollbar {
+    width: 6px;
+}
+
+.wrapper-price::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.wrapper-price::-webkit-scrollbar-thumb {
+    background: #00000050;
+    height: 15%;
+    border-radius: 10px;
+}
+
+.wrapper-price::-webkit-scrollbar-thumb:hover {
+    background: #00000090;
+}
+
+.box-price {
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #04d435;
+    text-shadow: 1px 1px 5px #000000;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.box-price:hover {
+    box-shadow: inset 0 0 5px #dc143c;
+    background-color: #dc143c80;
+}
+
+.box-price:active {
+    box-shadow: inset 0 0 5px #04d435;
+    background-color: #04d43580;
+}
+
+.displayNone {
+    display: none;
+}

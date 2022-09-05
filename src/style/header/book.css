@@ -1,0 +1,74 @@
+.info-book {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-book {
+    height: 100%;
+}
+
+.icon-book-img {
+    width: auto;
+    height: 90%;
+    filter: invert(100%);
+}
+
+.info-open-book {
+    position: absolute;
+    top: calc(10vh - 10px);
+    right: -10px;
+    width: 30vw;
+    background-color: #2e2e2ecc;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 5px #000000;
+    z-index: 17;
+}
+
+.title-info-open-book {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.subtitle-ul-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.subtitle-li-info {
+    display: block;
+    width: calc(100% - 2rem);
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.subtitle-li-info:hover {
+    filter: drop-shadow(0 0 5px red);
+}
+
+.subtitle-li-info:active {
+    filter: drop-shadow(0 0 5px green);
+}
+
+.subtitle-li-info-background1 {
+    background: url(../../photo/icon/cross-mark.png) no-repeat 0.25rem;
+    background-size: 1rem;
+}
+
+.subtitle-li-info-background2 {
+    background: url(../../photo/icon/check-mark.png) no-repeat 0.25rem;
+    background-size: 1rem;
+}
