@@ -78,7 +78,7 @@
     box-shadow: 0 0 10px #04d435;
 }
 
-.btn-answer {
+.btn-answer2 {
     width: 100%;
     background-color: transparent;
     border: 4px solid #ffffff;
@@ -92,11 +92,11 @@
     transition: 0.3s ease-in-out;
 }
 
-.btn-answer:hover {
+.btn-answer2:hover {
     filter: drop-shadow(0 0 2px #ff0099);
 }
 
-.btn-answer:active {
+.btn-answer2:active {
     background-color: green;
     filter: drop-shadow(0 0 5px green);
 }
