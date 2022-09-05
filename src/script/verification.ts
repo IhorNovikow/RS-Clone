@@ -19,6 +19,8 @@ export function verification(): boolean {
             case 46:
                 localStorage.setItem('result', '52');
                 break;
+            case 56:
+                break;
             default:
                 localStorage.setItem('result', String(id + 1));
         }
