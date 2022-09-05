@@ -22,11 +22,13 @@ export const info51 = `
     1. Правило переноса. При переносе из одной части в другую, член уравнения меняет свой знак на противоположный.<br>
     Для примера рассмотрим простейшее уравнение: x+3=5. Начнем с того, что в каждом уравнении есть левая и правая часть.
 </p>
-<img src="../photo/assets/img/примеры/уравнения v1.1.png" alt="пример" class="example-info41">
+<!--<img src="../photo/assets/img/примеры/уравнения v1.1.png" alt="пример" class="example-info41">-->
+<img src="./photo/assets/img/примеры/уравнения v1.1.png" alt="пример" class="example-info41">
 <p class="paragraph">
     Перенесем 3 из левой части в правую и меняем знак на противоположный.
 </p>
-<img src="../photo/assets/img/примеры/уравнения v1.2.png" alt="пример" class="example-info41">
+<!--<img src="../photo/assets/img/примеры/уравнения v1.2.png" alt="пример" class="example-info41">-->
+<img src="./photo/assets/img/примеры/уравнения v1.2.png" alt="пример" class="example-info41">
 <p class="paragraph">
     Можно проверить: 2 + 3 = 5. Все верно. Корень равен 2.<br>
     Решим еще один пример: 6x = 5x + 10.<br>
@@ -40,16 +42,19 @@ export const info51 = `
     Применим правило при решении примера: 4x=8.<br>
     При неизвестной х стоит числовой коэффициент — 4. Их объединяет действие — умножение.
 </p>
-<img src="../photo/assets/img/примеры/уравнения v1.3.png" alt="пример" class="example-info41">
+<!--<img src="../photo/assets/img/примеры/уравнения v1.3.png" alt="пример" class="example-info41">-->
+<img src="./photo/assets/img/примеры/уравнения v1.3.png" alt="пример" class="example-info41">
 <p class="paragraph">
     Чтобы решить уравнение, нужно сделать так, чтобы при неизвестной x стояла единица.<br>
     Разделим каждую часть на 4. Как это выглядит:
 </p>
-<img src="../photo/assets/img/примеры/уравнения v1.4.png" alt="пример" class="example-info41">
+<!--<img src="../photo/assets/img/примеры/уравнения v1.4.png" alt="пример" class="example-info41">-->
+<img src="./photo/assets/img/примеры/уравнения v1.4.png" alt="пример" class="example-info41">
 <p class="paragraph">
     Теперь сократим дроби, которые у нас получились и завершим решение линейного уравнения:
 </p>
-<img src="../photo/assets/img/примеры/уравнения v1.5.png" alt="пример" class="example-info41">
+<!--<img src="../photo/assets/img/примеры/уравнения v1.5.png" alt="пример" class="example-info41">-->
+<img src="./photo/assets/img/примеры/уравнения v1.5.png" alt="пример" class="example-info41">
 <p class="paragraph">
     Рассмотрим пример, когда неизвестная переменная стоит со знаком минус: -4x = 12<br>
     Как решаем:<br>
@@ -66,7 +71,8 @@ export const info51 = `
     • Приводим подобные члены в каждой части уравнения.<br>
     • Решаем уравнение, которое получилось: aх = b. Делим обе части на коэффициент при неизвестном.<br>
 </p>
-<img src="../photo/assets/img/примеры/уравнения v2.0.png" alt="пример" class="example-info41">
+<!--<img src="../photo/assets/img/примеры/уравнения v2.0.png" alt="пример" class="example-info41">-->
+<img src="./photo/assets/img/примеры/уравнения v2.0.png" alt="пример" class="example-info41">
 `;
 
 export const info52 = `

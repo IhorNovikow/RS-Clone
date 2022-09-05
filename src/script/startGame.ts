@@ -115,10 +115,7 @@ function transitionToTopik() {
     subtitleUlInfo.addEventListener('click', (event) => {
         const target = <HTMLElement>event.target;
         const targetParent = <HTMLElement>target.parentNode;
-        console.log('target', target);
-        console.log('our target', subtitleUlInfo.childNodes[1].childNodes[0]);
-        console.log(target === subtitleUlInfo.childNodes[1].childNodes[0]);
-        if (target === subtitleUlInfo.childNodes[1].childNodes[0]) {
+        /*if (target === subtitleUlInfo.childNodes[1].childNodes[0]) {
             if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(11)];
@@ -163,6 +160,63 @@ function transitionToTopik() {
                 closeAlert();
             }
         } else if (target === subtitleUlInfo.childNodes[9].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(51)];
+                inf = 51;
+                openGame(numberGame);
+            } else {
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
+            }
+        }*/
+
+        if (target === subtitleUlInfo.childNodes[0].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(11)];
+                inf = 11;
+                openGame(numberGame);
+            } else {
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
+            }
+        } else if (target === subtitleUlInfo.childNodes[1].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(21)];
+                inf = 21;
+                openGame(numberGame);
+            } else {
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
+            }
+        } else if (target === subtitleUlInfo.childNodes[2].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(31)];
+                inf = 31;
+                openGame(numberGame);
+            } else {
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
+            }
+        } else if (target === subtitleUlInfo.childNodes[3].childNodes[0]) {
+            if (targetParent.classList.contains('subtitle-li-info-background2')) {
+                toggleDisplayNone();
+                const numberGame: string = info[String(41)];
+                inf = 41;
+                openGame(numberGame);
+            } else {
+                alertMessage.classList.add('alert-active');
+                alertMessageText.innerHTML = 'Для перехода на этот уровень необходимо пройти предыдущие.';
+                closeAlert();
+            }
+        } else if (target === subtitleUlInfo.childNodes[4].childNodes[0]) {
             if (targetParent.classList.contains('subtitle-li-info-background2')) {
                 toggleDisplayNone();
                 const numberGame: string = info[String(51)];
