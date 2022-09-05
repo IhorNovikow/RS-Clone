@@ -8,7 +8,8 @@ export const info11 = `
     Если мы представим числа 3 и 1 в виде яблок, то, прибавляя к трем яблокам еще одно у нас получится 4 яблока.
     То есть значение данного выражения 3 + 1 равно 4.
 </p>
-<img src="../photo/assets/img/примеры/plus.png" alt="пример" class="example-info11">
+<!--<img src="../photo/assets/img/примеры/plus.png" alt="пример" class="example-info11">-->
+<img src="./photo/assets/img/примеры/plus.png" alt="пример" class="example-info11">
 <h3 class="theme-subtitle">Вычитание</h3>
 <p class="paragraph">
     Теперь нам нужно научится вычитать (отнимать) числа. Нам поможет всё тот же пример с яблоками.<br>
@@ -17,7 +18,8 @@ export const info11 = `
     Если мы так же представим числа 3 и 1 в виде яблок, то, отнимая от трех яблок еще одно у нас получится 2 яблока.
     То есть значение данного выражения 3 - 1 равно 2.
 </p>
-<img src="../photo/assets/img/примеры/minus.png" alt="пример" class="example-info11">
+<!--<img src="../photo/assets/img/примеры/minus.png" alt="пример" class="example-info11">-->
+<img src="./photo/assets/img/примеры/minus.png" alt="пример" class="example-info11">
 `;
 
 export const info12 = `

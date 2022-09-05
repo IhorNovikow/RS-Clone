@@ -1,12 +1,19 @@
 export function addCheckToTopik() {
     const result = <string>localStorage.getItem('result');
     const subtitleUlInfo = <HTMLUListElement>document.querySelector('.subtitle-ul-info');
-    const li1 = <HTMLElement>subtitleUlInfo.childNodes[1];
+    /*    const li1 = <HTMLElement>subtitleUlInfo.childNodes[1];
     const li2 = <HTMLElement>subtitleUlInfo.childNodes[3];
     const li3 = <HTMLElement>subtitleUlInfo.childNodes[5];
     const li4 = <HTMLElement>subtitleUlInfo.childNodes[7];
     const li5 = <HTMLElement>subtitleUlInfo.childNodes[9];
-
+*/
+    //для билда проекта надо внести изменения, так как нарушается последовательность детей
+    //смещение идет на -1
+    const li1 = <HTMLElement>subtitleUlInfo.childNodes[0];
+    const li2 = <HTMLElement>subtitleUlInfo.childNodes[1];
+    const li3 = <HTMLElement>subtitleUlInfo.childNodes[2];
+    const li4 = <HTMLElement>subtitleUlInfo.childNodes[3];
+    const li5 = <HTMLElement>subtitleUlInfo.childNodes[4];
     if (Number(result) > 10) {
         li1.classList.remove('subtitle-li-info-background1');
         li1.classList.add('subtitle-li-info-background2');
