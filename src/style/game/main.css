@@ -1,61 +1,126 @@
-.main{
-    background-color: black;
-    color: white;
+.body {
+    font-family: 'Segoe UI';
+    overflow-x: hidden;
+}
+
+.main {
+    background-color: #3d3d3d;
+    color: #ffffff;
     width: 100%;
-    height: 100vh;
-    padding: 5%;
-    text-align: center;
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: relative;
 }
-.wrapper-game{
+
+.mini-game-title {
+    font-size: 2.8rem;
+    text-shadow: 1px 1px 7px #000000;
+    font-weight: 400;
+}
+
+.wrapper-game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mini-game {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-game-img {
     width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-}
-.game1{
-    width: 45%;
-    height: 40%;
-    background-image: url(../../photo/icon/100K1.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.game1:hover{
-    width: 46%;
-    height: 41%;
-    filter: drop-shadow(0 0 5px red);
-}
-.game1:active{
-    width: 44%;
-    height: 39%;
-    filter: drop-shadow(0 0 5px green);
+    height: 90%;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
 }
 
-.game2{
-    width: 45%;
-    height: 40%;
-    background-image: url(../../photo/icon/viktorina.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.mini-game-img:hover {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px #ff0099;
 }
 
-.winners-wrapper{
-    border: 1px solid red;
-    width: 150px;
-    position: absolute;
-    top: 25px;
-    cursor: pointer;
+.mini-game-img:active {
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 0 15px #ff0099;
 }
-.winer:hover{
-    filter: drop-shadow(0px 0px 2px rgb(0, 110, 255));
-}
-.score{
-    border: 1px solid green;
-    width: 150px;
+
+.score {
     position: absolute;
-    top: 25px;
-    left: 150px;
+    top: 10px;
+    right: 20px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px #000000;
+    cursor: default;
+    z-index: 10;
+}
+
+.winners-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px #000000;
     cursor: pointer;
-    display: flex;
+    z-index: 10;
+}
+
+.winners-wrapper-act {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #00000090;
+    backdrop-filter: blur(5px);
+}
+
+.title-wrapper {
+    position: absolute;
+    width: 140px;
+    top: 2.5rem;
+    right: 20px;
+    filter: drop-shadow(0px 0px 2px #0059ff);
+    text-shadow: 1px 1px 2px #ff0099;
+    transition: 0.3s ease-in-out;
+}
+
+.title-wrapper:hover {
+    filter: drop-shadow(0px 0px 2px #ff0099);
+    text-shadow: 1px 1px 2px #0059ff;
+}
+
+.list-winers {
+    min-width: 320px;
+    position: absolute;
+    right: 20px;
+    top: 4.5rem;
+    filter: drop-shadow(0px 0px 1px #ff0099);
+    text-shadow: 1px 1px 2px #000000;
+    transition: all 0.5s linear;
+}
+
+.move {
+    position: absolute;
+    right: -400px;
+    transition: all 0.5s linear;
+}
+
+.winer {
+    text-shadow: 1px 1px 2px #000000;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #0059ff;
+    cursor: default;
 }

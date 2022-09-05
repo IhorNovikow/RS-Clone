@@ -14,8 +14,8 @@ body {
 }
 
 .main-wrapper-btn{
-    width: 20vh;
-    height: 20vh;
+    width: 150px;
+    height: 150px;
     position: relative;
     display: flex;
     justify-content: center;

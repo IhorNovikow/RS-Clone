@@ -29,7 +29,7 @@ export async function getUsers() {
             }
             allWiners.forEach((el, index) => {
                 listWiners.innerHTML =
-                    listWiners.innerHTML + `<li class="winer">${index + 1}. ${el.username} ${el.score}</li>`;
+                    listWiners.innerHTML + `<li class="winer">${index + 1}. ${el.username}: ${el.score} баллов</li>`;
             });
         });
 }
