@@ -9,11 +9,11 @@ import './style/gameStr.css';
 import './style/alert.css';
 import './style/mainAdaptive.css';
 
+import './script/music/backgroundMusic';
+import './script/music/musicMainGame';
 import './script/startGame';
 import './script/changeBackground';
 import './script/firtVisit';
-import './script/music/backgroundMusic';
-import './script/music/musicMainGame';
 import './script/runBoy';
 import './script/openCloseBook';
 import './script/addCheckToTopik';

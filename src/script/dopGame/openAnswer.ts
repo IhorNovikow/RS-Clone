@@ -1,13 +1,7 @@
-export function openAnswer(content: string) {
-    const windowAnswer = <HTMLElement>document.querySelector('.window-answer');
-    const answerContent = <HTMLElement>document.querySelector('.answer-content');
-    const closeAnswer = <HTMLElement>document.querySelector('.close-answer');
+export function openAnswer() {
+    const alertButton = <HTMLElement>document.querySelector('.alert-button');
     const windowQestion = <HTMLElement>document.querySelector('.window-qestion');
-
-    windowAnswer.classList.remove('displayNone');
-    answerContent.innerHTML = content;
-    closeAnswer.addEventListener('click', () => {
-        windowAnswer.classList.add('displayNone');
+    alertButton.addEventListener('click', () => {
         windowQestion.classList.add('displayNone');
     });
 }
